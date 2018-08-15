@@ -1,0 +1,44 @@
+.navbar-sub{
+	margin-top: 0rem;
+}
+
+.translate,
+.singup {
+    margin: auto;
+    width: 50%;
+}
+
+.singup {
+	text-align: right;
+}
+
+.singup--item,
+.translate--item {
+	color: White;
+    font-weight: 900;
+	text-transform: uppercase;
+}
+
+.singup--item {
+    padding-left: 10px;
+}
+
+.navbar-sub .translate--item {
+	display: inline;
+	padding-right: 20px;
+}
+
+.singup--ico figure {
+	display: inline-block;
+    width: 32px;
+}
+
+.navbar-sub::after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-bottom: 1px solid lighten($primary, 15%);
+}

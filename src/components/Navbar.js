@@ -1,38 +1,40 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
+  <nav className="navbar">
+    <div className="container is-fluid">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
+        <Link to="/">
           <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+            <img src={logo} alt="Vipsportbook"/>
           </figure>
         </Link>
       </div>
       <div className="navbar-start">
         <Link className="navbar-item" to="/about">
-          About
+          Home
         </Link>
         <Link className="navbar-item" to="/products">
-          Products
+          Sports
         </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
+        <Link className="navbar-item" to="/products">
+          Betting
+        </Link>
+        <Link className="navbar-item" to="/products">
+          Rules
+        </Link>
+        <Link className="navbar-item" to="/products">
+          Bonuses
+        </Link>
+        <Link className="navbar-item" to="/products">
+          Banking
+        </Link>
+        <Link className="button is-outlined is-rounded" to="/products">
+          Join us
+        </Link>
       </div>
     </div>
   </nav>

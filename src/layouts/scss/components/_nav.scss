@@ -1,0 +1,23 @@
+.main-header, 
+.navbar {
+  background: $primary;
+}
+
+.navbar {
+    padding-bottom: 15px;
+}
+
+.navbar-start {
+	align-items: center;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.navbar .navbar-item {
+	color: white;
+	text-transform: uppercase;
+	&:hover{
+		background: transparent;
+		color: $secondary;
+	}
+}

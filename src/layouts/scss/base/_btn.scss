@@ -1,0 +1,15 @@
+.is-outlined {
+	background: transparent;
+	color: white;
+	border: solid 2px $secondary; 
+}
+
+.is-outlined:hover {
+	color: white;
+	background: $secondary;
+	border: solid 2px $secondary; 
+}
+
+.is-rounded {
+	border-radius:50px;
+}
