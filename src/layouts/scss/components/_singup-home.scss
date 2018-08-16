@@ -1,0 +1,31 @@
+.singup-cta {
+	background: $primary;
+	border-radius: 25px;
+	right: 8%;
+	padding: 1% 2% 2% 2%;
+	position: absolute;
+	top: 5%;
+    width: 20%;
+	z-index: 1;
+
+	h2 {
+		border-bottom: solid 1px white;
+		color: white;
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+
+	.terms {
+		color: white;
+		font-size: 14px;
+		margin: 10px 0 ;
+	}
+}
+
+.field {
+	padding-top: 8px;
+}
+
+.label--singup {
+	color: white;
+}

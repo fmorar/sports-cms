@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Carousel from 'nuka-carousel';
 import Steps from '../components/Steps'
+import SingupHome from '../components/SingupHome'
+import slide1 from '../img/slide1.jpg'
+
 
 export default class IndexPage extends React.Component {
   state = {
@@ -14,17 +17,21 @@ export default class IndexPage extends React.Component {
 
     return (
       <section>
+      <div className="hero">
+        <SingupHome/>
         <Carousel
           slidesToShow={1}
           autoplay={true}
           slideIndex={this.state.slideIndex}
           afterSlide={slideIndex => this.setState({ slideIndex })}
         >
-          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1" />
-          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />
-          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3" />
+          <img src={slide1} />
+          <img src={slide1} />
+          <img src={slide1} />
         </Carousel>
         <Steps/>
+        <div className="hidden-height"></div>
+      </div>
         <div className="section">
           <div className="container">
             <div className="content">

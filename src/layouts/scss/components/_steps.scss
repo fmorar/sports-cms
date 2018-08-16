@@ -1,0 +1,43 @@
+.hero {
+	position: relative;
+}
+
+.steps {
+	align-items: center;
+	background: white;
+	border-radius: 25px;
+    bottom: 0;
+    display: flex;
+	left: calc(50% - 500px);
+	padding: 2%;
+	position: absolute;
+
+
+	.steps__title {
+		border-left: 5px solid $secondary;
+		color: $secondary;
+		font-size: 2rem;
+		font-weight: 900;
+		line-height: 1;
+		padding-left: 10px;
+	}
+}
+
+.steps__img,
+.steps__content {
+	display: inline-block;
+}
+
+.steps__img-container {
+	img {
+    	width: 150px;
+	}
+
+	p {	
+		font-size: 14px;
+	}
+}
+
+.hidden-height {
+	height: 100px;
+}

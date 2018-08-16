@@ -1,3 +1,7 @@
+.button {
+	border-radius: 8px;
+}
+
 .is-outlined {
 	background: transparent;
 	color: white;
@@ -12,4 +16,17 @@
 
 .is-rounded {
 	border-radius:50px;
+}
+
+.button--singup {
+	color: white;
+	background: $secondary;
+	border: none;
+	&:hover {
+		color: white;
+	}
+}
+
+.button.is-large {
+	font-size: inherit;
 }
