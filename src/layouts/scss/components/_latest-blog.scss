@@ -1,0 +1,23 @@
+.latest-blog__article {
+	background: white;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+.text-body {
+	width: 90%;
+}
+
+.article-content {
+	
+	.title {
+		width: 90%;
+		a {
+			color: $highlights-color;
+		}
+	}
+
+	.text-body {
+		color: $text-color;
+	}
+}

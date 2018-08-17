@@ -1,5 +1,16 @@
 .button {
+	color: white;
+	background: $secondary;
+	border: none;
 	border-radius: 8px;
+	&:hover {
+		color: white;
+		border: none;
+	}
+	&:active, 
+	&:focus {
+		color: white;
+	}
 }
 
 .is-outlined {
@@ -9,7 +20,6 @@
 }
 
 .is-outlined:hover {
-	color: white;
 	background: $secondary;
 	border: solid 2px $secondary; 
 }
@@ -21,7 +31,6 @@
 .button--singup {
 	color: white;
 	background: $secondary;
-	border: none;
 	&:hover {
 		color: white;
 	}
@@ -29,4 +38,11 @@
 
 .button.is-large {
 	font-size: inherit;
+}
+
+.is-text {
+	color: $secondary !important;
+	&:hover {
+		background: transparent !important;
+	}
 }

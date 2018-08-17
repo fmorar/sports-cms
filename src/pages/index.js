@@ -33,32 +33,35 @@ export default class IndexPage extends React.Component {
         <div className="hidden-height"></div>
       </div>
         <div className="section">
-          <div className="container">
+          <div className="container latest-blog">
             <div className="content">
               <h3 className="has-text-weight-bold is-size-2">Blog</h3>
             </div>
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content"
+                  className="content columns latest-blog__article"
                   key={post.id}
                 >
-                <img src={post.frontmatter.image} alt=""/>
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
+                  <figure className="image column is-3">
+                    <img className="image__article" src={post.frontmatter.image} alt="Imagen from blog article"/>
+                  </figure>
+                  <div className="article-content column is-9">
+                    <p className="title">
+                      <Link to={post.fields.slug}>
+                        {post.frontmatter.title}
+                      </Link>
+                    </p>
+                    <p className="text-body">
+                      {post.excerpt}
+                    </p>
+                    <div className="info-wrapper columns">
+                      <small className="column">{post.frontmatter.date}</small>
+                      <Link className="button is-text column" to={post.fields.slug}>
+                        Keep Reading
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               ))}
           </div>
