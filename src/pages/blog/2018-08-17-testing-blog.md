@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Testing blog
-image: /img/coffee.png
+image: /img/sports.jpg
 date: '2018-08-17T09:56:29-06:00'
 description: esto es un articulo de prueba
 tags:
