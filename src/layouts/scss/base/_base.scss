@@ -2,9 +2,12 @@ body {
 	background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-header {
+header,
+footer {
 	background: $primary;
 }
+
+
 
 .text-center {
 	text-align: center;

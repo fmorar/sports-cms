@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 const Footer = () => (
   <footer>
     <div className="container">
-      <div className="sitemap">
-        <div className="sitemap__block">
+      <div className="sitemap columns is-desktop">
+        <div className="sitemap__block column">
           <h4>Information</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">About us</li>
@@ -15,7 +15,7 @@ const Footer = () => (
             <li className="sitemap--menu__item">Betting With Bitcoin </li>
           </ul>
         </div>
-        <div className="sitemap__block">
+        <div className="sitemap__block column">
           <h4>Beatting</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">Sportsbook</li>
@@ -24,7 +24,7 @@ const Footer = () => (
             <li className="sitemap--menu__item">Racebook</li>
           </ul>
         </div>
-        <div className="sitemap__block">
+        <div className="sitemap__block column">
           <h4>Help</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">Banking</li>
@@ -33,7 +33,7 @@ const Footer = () => (
             <li className="sitemap--menu__item">General Rules</li>
           </ul>
         </div>
-        <div className="sitemap__block">
+        <div className="sitemap__block column">
           <h4>Social</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">Facebook</li>
@@ -43,7 +43,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="copyright">
+    <div className="copyright text-center">
       <p>VIPSPORTBOOK 2018© All Rights Reserved.</p>
     </div>
   </footer>
