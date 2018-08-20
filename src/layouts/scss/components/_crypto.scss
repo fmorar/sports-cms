@@ -1,0 +1,13 @@
+.crypto {
+	background-image: url("../../img/crypto.jpg");
+    background-size: cover;
+    padding: 3%;
+}
+
+.crypto__title {
+	color: white;
+    border-left: solid 8px $secondary;
+	font-size: 2rem;
+	font-weight: 900;
+    padding-left: 10px;
+}
