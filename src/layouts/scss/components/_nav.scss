@@ -1,6 +1,11 @@
-.main-header, 
+.main-header,
+.navbar-start, 
 .navbar {
   background: $primary;
+}
+
+.navbar-menu {
+	padding: 0;
 }
 
 .navbar {
@@ -20,4 +25,8 @@
 		background: transparent;
 		color: $secondary;
 	}
+}
+
+.navbar-burger {
+    color: white;
 }
