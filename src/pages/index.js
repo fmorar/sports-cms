@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import Carousel from 'nuka-carousel';
+import Carousel from 'nuka-carousel'
 import Steps from '../components/Steps'
 import SingupHome from '../components/SingupHome'
 import CrytpCta from '../components/CrytpCta'
@@ -10,9 +10,33 @@ import slide1 from '../img/slide1.jpg'
 
 
 export default class IndexPage extends React.Component {
-  state = {
-    slideIndex: 0
-  };
+
+  constructor(props){
+      super(props);
+      this.state = {
+          isLoading: true,
+          slideIndex: 0,
+          games: []
+      }
+  }
+
+  componentDidMount() {
+    fetch('https://api.stattleship.com/baseball/mlb/games?status=upcoming',{
+      headers: {
+        Accept: "application/vnd.stattleship.com; version=1",
+        Authorization: "Token token=ab97a593039f0e54e901e60b493307ad",
+        "Content-Type": "application/json"
+      }
+    }).
+    then((Response)=>Response.json()).
+    then((findresponse)=> {
+      console.log(findresponse.games);
+      this.setState({
+        games: findresponse.games,
+      })
+    })
+  }
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -39,6 +63,15 @@ export default class IndexPage extends React.Component {
         </div>
         <div className="section">
           <BonusesHome/>
+        </div>
+        <div className="section real-time-data">
+          {
+            this.state.games.map((dynamicData,key) =>
+              <div key={dynamicData.id}>
+                {dynamicData.title}
+              </div>
+            )
+          }
         </div>
         <div className="section">
           <div className="container latest-blog">
