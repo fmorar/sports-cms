@@ -13,9 +13,9 @@ const BonusesHome = () => (
           <p className="bonuses-info">
             200%
             <br/>
-            <span>FREE PLAY!</span>
+            <span>Free play!</span>
           </p>
-          <Link className="button is-text" to="/">Get Now!</Link>
+          <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
         </div>
         <div className="column is-6">
           <div className="image-small--container">
@@ -25,18 +25,18 @@ const BonusesHome = () => (
                 <p className="bonuses-info">
                   200%
                   <br/>
-                  <span>FREE PLAY!</span>
+                  <span>Free play!</span>
                 </p>
-                <Link className="button is-text" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
               </div>
               <div className="image image-small column">
                 <img src={bonuses02} alt=""/>
                 <p className="bonuses-info">
                   200%
                   <br/>
-                  <span>FREE PLAY!</span>
+                  <span>Free play!</span>
                 </p>
-                <Link className="button is-text" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
               </div>
             </div>
             <div className="columns">
@@ -45,18 +45,18 @@ const BonusesHome = () => (
                 <p className="bonuses-info">
                   200%
                   <br/>
-                  <span>FREE PLAY!</span>
+                  <span>Free play!</span>
                 </p>
-                <Link className="button is-text" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
               </div>
               <div className="image image-small column">
                 <img src={bonuses02} alt=""/>
                 <p className="bonuses-info">
                   200%
                   <br/>
-                  <span>FREE PLAY!</span>
+                  <span>Free play!</span>
                 </p>
-                <Link className="button is-text" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
               </div>
             </div>
           </div>
