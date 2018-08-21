@@ -66,9 +66,16 @@ export default class IndexPage extends React.Component {
         </div>
         <div className="section real-time-data">
           {
-            this.state.games.map((dynamicData,key) =>
-              <div key={dynamicData.id}>
-                {dynamicData.title}
+            this.state.games.slice(0, 5).map((dynamicData,key) =>
+              <div className="current-games" key={dynamicData.id}>
+                <div className="current-games__time">
+                  <p>Live</p>
+                  <span>{dynamicData.started_at}</span>
+                </div>
+                <div class="current-games__title">
+                  <h4>{dynamicData.title}</h4>
+                  <span className="broadcast">{dynamicData.broadcast}</span>
+                </div>
               </div>
             )
           }
