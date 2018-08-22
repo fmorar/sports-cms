@@ -1,0 +1,27 @@
+.current-games {
+    margin-right: 20px;
+}
+
+.current-games__time {
+	background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+
+	p {
+		color: white;
+		font-size: 1.5rem;
+	    font-weight: 900;
+	}
+
+	span {
+		color: white;
+	}
+}
+
+.current-games__title {
+	background: white;
+
+	h4 {
+    	color: black;
+		font-size: 1.2rem;
+	    font-weight: 900;
+	}
+}

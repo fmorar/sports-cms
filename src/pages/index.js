@@ -65,20 +65,32 @@ export default class IndexPage extends React.Component {
           <BonusesHome/>
         </div>
         <div className="section real-time-data">
-          {
-            this.state.games.slice(0, 5).map((dynamicData,key) =>
-              <div className="current-games" key={dynamicData.id}>
-                <div className="current-games__time">
-                  <p>Live</p>
-                  <span>{dynamicData.started_at}</span>
+        <div className="container">
+          <div className="content">
+            <h3 className="has-text-weight-bold is-size-2">Currently Games</h3>
+          </div>
+          <div className="columns">
+            {
+              this.state.games.slice(0, 3).map((dynamicData,key) =>
+                <div className="current-games column" key={dynamicData.id}>
+                  <div className="columns">
+                    <div className="current-games__time column">
+                      <p>Live</p>
+                      <span>{dynamicData.on}</span>
+                      <br/>
+                      <span>{(new Date(dynamicData.started_at)).getUTCHours()}:</span>
+                      <span>{(new Date(dynamicData.started_at)).getMinutes()}</span>
+                    </div>
+                    <div class="current-games__title column">
+                      <h4>{dynamicData.title}</h4>
+                      <span className="broadcast">{dynamicData.broadcast}</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="current-games__title">
-                  <h4>{dynamicData.title}</h4>
-                  <span className="broadcast">{dynamicData.broadcast}</span>
-                </div>
-              </div>
-            )
-          }
+              )
+            }
+          </div>
+        </div>
         </div>
         <div className="section">
           <div className="container latest-blog">
