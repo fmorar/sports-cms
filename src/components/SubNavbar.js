@@ -14,7 +14,7 @@ const SubNavbar = () => (
           <img src={icoUser} alt="Vipsportbook"/>
         </figure>
       </span>
-      <Link className="singup--item" to="#">sing up</Link>
+      <Link className="singup--item" to="sing-up">Iniciar sesión</Link>
     </div>
     
   </div>

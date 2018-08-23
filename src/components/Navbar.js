@@ -5,9 +5,11 @@ import logo from '../img/logo.svg'
 const Navbar = () => (
   <nav className="navbar is-transparent container is-fluid">
     <div className="navbar-brand">
-      <figure className="image">
-        <img src={logo} alt="Vipsportbook"/>
-      </figure>
+      <Link to="/">
+        <figure className="image">
+          <img src={logo} alt="Vipsportbook"/>
+        </figure>
+      </Link>
       <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
         <span></span>
