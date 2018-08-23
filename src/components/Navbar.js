@@ -16,26 +16,42 @@ const Navbar = () => (
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">
       <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-         Home
+        <Link className="navbar-item navbar-item__parent" to="/about">
+         Inicio
         </Link>
         <Link className="navbar-item" to="/products">
-         Sports
+         Bonus
         </Link>
         <Link className="navbar-item" to="/products">
-         Betting
+         Deportes
         </Link>
         <Link className="navbar-item" to="/products">
-         Rules
+         Sportbook
         </Link>
-        <Link className="navbar-item" to="/products">
-         Bonuses
-        </Link>
+        <div className="navbar-item has-dropdown is-hoverable">
+          <Link className="navbar-link">
+            Apuestas
+          </Link>
+          <div className="navbar-dropdown is-boxed">
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Casino virtual
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Casino en vivo
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Como jugar
+            </Link>
+          </div>
+        </div>
         <Link className="navbar-item" to="/products">
          Banking
         </Link>
+        <Link className="navbar-item" to="/products">
+         Blog
+        </Link>
         <Link className="button is-outlined is-rounded" to="/products">
-         Join us
+         Registrese
         </Link>
       </div>
     </div>
