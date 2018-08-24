@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About our values
-image: /img/chemex.jpg
+image: /img/about-us-content.jpg
 description: >-
   Somos una empresa de sportbooks con más de 20 años de experiencia en la
   industria de las apuestas y los servicios per head. Hemos trabajado con
