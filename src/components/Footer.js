@@ -9,36 +9,67 @@ const Footer = () => (
         <div className="sitemap__block column">
           <h4>Information</h4>
           <ul className="sitemap--menu">
-            <li className="sitemap--menu__item">About us</li>
-            <li className="sitemap--menu__item">Affiliates</li>
-            <li className="sitemap--menu__item">Partner login</li>
-            <li className="sitemap--menu__item">Betting With Bitcoin </li>
+            <li className="sitemap--menu__item">
+              <Link to="/about">
+              About us</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Affiliates</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Partner login</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Betting With Bitcoin</Link>
+            </li>
           </ul>
         </div>
         <div className="sitemap__block column">
           <h4>Beatting</h4>
           <ul className="sitemap--menu">
-            <li className="sitemap--menu__item">Sportsbook</li>
-            <li className="sitemap--menu__item">Live Casino</li>
-            <li className="sitemap--menu__item">Virtual Casino</li>
-            <li className="sitemap--menu__item">Racebook</li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Sportsbook</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Live Casino</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Virtual Casino</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Racebook</Link>
+            </li>
           </ul>
         </div>
         <div className="sitemap__block column">
           <h4>Help</h4>
           <ul className="sitemap--menu">
-            <li className="sitemap--menu__item">Banking</li>
-            <li className="sitemap--menu__item">Contact Us</li>
-            <li className="sitemap--menu__item">Privacy Policy</li>
-            <li className="sitemap--menu__item">General Rules</li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Banking</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Contact Us</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Privacy Policy</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">General Rules</Link>
+            </li>
           </ul>
         </div>
         <div className="sitemap__block column">
           <h4>Social</h4>
           <ul className="sitemap--menu">
-            <li className="sitemap--menu__item">Facebook</li>
-            <li className="sitemap--menu__item">Twitter</li>
-            <li className="sitemap--menu__item">Google plus</li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Facebook</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Twitter</Link>
+            </li>
+            <li className="sitemap--menu__item">
+              <Link to="/">Google plus</Link>
+            </li>
           </ul>
         </div>
       </div>

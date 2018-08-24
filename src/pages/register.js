@@ -3,6 +3,28 @@ import Link from 'gatsby-link'
 import RegisterImg from '../img/register.png'
 
 export default class Register extends React.Component {
+
+  constructor(props){
+      super(props);
+      this.state = {
+          isLoading: true,
+          countries: []
+      }
+  }
+
+  componentDidMount() {
+    fetch('https://restcountries.eu/rest/v2/all',{
+    }).
+    then((Response)=>Response.json()).
+    then((findresponse)=> {
+      this.setState({
+        countries: findresponse,
+      })
+    })
+  }
+
+
+
   render() {
     return (
 		<div className="sing-up">
@@ -78,8 +100,12 @@ export default class Register extends React.Component {
 							        <label className="label">País</label>
 											<div class="select is-rounded">
 											  <select>
-											    <option>Pais</option>
-											    <option>With options</option>
+						              {
+						                this.state.countries.map((dynamicData,key) =>
+						                	<option key={dynamicData.numericCode}>{dynamicData.name}</option>
+
+						                )
+						              }
 											  </select>
 										  </div>
 										</div>

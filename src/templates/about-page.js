@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, description, image, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -14,6 +14,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <p>
+                {description}
+              </p>
+              <img alt="" src={image} />
               <PageContent className="content" content={content} />
             </div>
           </div>
@@ -25,6 +29,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -36,6 +42,8 @@ const AboutPage = ({ data }) => {
     <AboutPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
+      description={post.frontmatter.description}
       content={post.html}
     />
   )
@@ -53,6 +61,8 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        image
+        description
       }
     }
   }
