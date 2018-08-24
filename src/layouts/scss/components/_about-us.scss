@@ -1,0 +1,23 @@
+.about-us--hero {
+	background: url("../../img/about-us.jpg") center;
+	position: relative;
+	height: 250px;
+
+	.about-us--container {
+		background: white;
+		margin-left:auto;
+		margin-right:auto;
+		position: absolute;
+		left:0;
+		right:0;
+	    width: 60%;
+	}
+}
+
+.about-content {
+	p {
+	    border-left: 5px solid $secondary;
+	    margin: 0 12%;
+	    padding-left: 10px;
+	}
+}
