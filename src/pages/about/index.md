@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: About our values
+title: About Us
 image: /img/about-us-content.jpg
 description: >-
   Somos una empresa de sportbooks con más de 20 años de experiencia en la
