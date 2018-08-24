@@ -1,0 +1,11 @@
+.form-home,
+.login {
+
+	input,
+	textarea {
+		background: transparent;
+		box-shadow: none;
+		border: solid 1px $highlights-color;
+		border-radius: 10px;
+	}
+}

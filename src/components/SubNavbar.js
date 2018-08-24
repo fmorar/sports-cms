@@ -16,7 +16,6 @@ const SubNavbar = () => (
       </span>
       <Link className="singup--item" to="sing-up">Iniciar sesión</Link>
     </div>
-    
   </div>
 )
 export default SubNavbar

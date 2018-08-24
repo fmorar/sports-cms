@@ -44,7 +44,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="copyright text-center">
-      <p>VIPSPORTBOOK 2018© All Rights Reserved.</p>
+      <p>VIPSPORTBOOK {(new Date().getFullYear())} All Rights Reserved.</p>
     </div>
   </footer>
 )

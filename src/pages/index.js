@@ -32,7 +32,7 @@ export default class IndexPage extends React.Component {
     }).
     then((Response)=>Response.json()).
     then((findresponse)=> {
-      console.log(findresponse.games);
+      //console.log(findresponse.games);
       this.setState({
         games: findresponse.games,
       })

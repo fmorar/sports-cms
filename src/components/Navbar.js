@@ -18,7 +18,7 @@ const Navbar = () => (
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">
       <div className="navbar-start">
-        <Link className="navbar-item navbar-item__parent" to="/about">
+        <Link className="navbar-item navbar-item__parent" to="/">
          Inicio
         </Link>
         <Link className="navbar-item" to="/products">
@@ -52,7 +52,7 @@ const Navbar = () => (
         <Link className="navbar-item" to="/products">
          Blog
         </Link>
-        <Link className="button is-outlined is-rounded" to="/products">
+        <Link className="button is-outlined is-rounded" to="/register">
          Registrese
         </Link>
       </div>
