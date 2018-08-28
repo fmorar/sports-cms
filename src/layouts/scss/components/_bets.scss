@@ -1,0 +1,14 @@
+.bets--hero {
+	background: url("../../img/bets.jpg") center;
+	position: relative;
+	height: 250px;
+
+}
+
+.card__bet {
+    width: 70%;
+    h3 {
+	    color: $back-grey;
+	    font-weight: bold;
+    }
+}

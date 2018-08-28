@@ -31,18 +31,18 @@ const Navbar = () => (
          Sportbook
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
-          <p className="navbar-link">
+          <Link className="navbar-link" to="/bets">
             Apuestas
-          </p>
+          </Link>
           <div className="navbar-dropdown is-boxed">
-            <Link className="navbar-item navbar-item__responsive" to="/">
+            <Link className="navbar-item navbar-item__responsive" to="/bets#racebook">
+              Racebook
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/bets#casinoVirtual">
               Casino virtual
             </Link>
-            <Link className="navbar-item navbar-item__responsive" to="/">
+            <Link className="navbar-item navbar-item__responsive" to="/bets#casinoVivo">
               Casino en vivo
-            </Link>
-            <Link className="navbar-item navbar-item__responsive" to="/">
-              Como jugar
             </Link>
           </div>
         </div>
