@@ -9,7 +9,7 @@ const ContactForm = () => (
     </div>
     <div className="columns">
       <div className="column">
-        <form action="" method="post" netlify>
+        <form action="" method="post">
           <div className="field">
             <label className="label label--contact">Name</label>
             <div className="control">
@@ -31,7 +31,7 @@ const ContactForm = () => (
           <div className="field">
             <label className="label label--contact">Message</label>
             <div className="control">
-              <textarea class="textarea" rows="7" placeholder="Message here"></textarea>
+              <textarea className="textarea" rows="7" placeholder="Message here"></textarea>
             </div>
           </div>
 

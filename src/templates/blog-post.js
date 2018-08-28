@@ -15,35 +15,49 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
+  let bgDynamic = {
+    backgroundImage: 'url(' + image + '), linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)',
+    backgroundBlendMode: 'luminosity',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    color: 'white',
+    position: 'relative',
+    height: '200px',
+  };
   return (
-    <section className="section">
+    <div className="blog-post">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <img src={image} alt="alt"/>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+      <div style={bgDynamic} className="blog-post--hero">
+        <h2 className="section-title section-title__blog-post title title__main is-size-3 has-text-weight-bold is-bold-light text-center">
+          {title}
+        </h2>
+      </div>
+      <div className="section">
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <p>
+                {description}
+              </p>
+              <PostContent content={content} />
+              {tags && tags.length ? (
+                <div className="pt-50">
+                  <h4>Tags</h4>
+                  <div className="tags">
+                    {tags.map(tag => (
+                      <span className="tag tag-blog is-rounded is-medium is-link" key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

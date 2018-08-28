@@ -21,7 +21,7 @@ const Navbar = () => (
         <Link className="navbar-item navbar-item__parent" to="/">
          Inicio
         </Link>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/bonuses">
          Bonus
         </Link>
         <Link className="navbar-item" to="/products">
@@ -31,9 +31,9 @@ const Navbar = () => (
          Sportbook
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
-          <Link className="navbar-link">
+          <p className="navbar-link">
             Apuestas
-          </Link>
+          </p>
           <div className="navbar-dropdown is-boxed">
             <Link className="navbar-item navbar-item__responsive" to="/">
               Casino virtual
@@ -49,7 +49,7 @@ const Navbar = () => (
         <Link className="navbar-item" to="/products">
          Banking
         </Link>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/blog">
          Blog
         </Link>
         <Link className="button is-outlined is-rounded" to="/register">

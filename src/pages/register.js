@@ -98,7 +98,7 @@ export default class Register extends React.Component {
 
 							      <div className="field">
 							        <label className="label">País</label>
-											<div class="select is-rounded">
+											<div className="select is-rounded">
 											  <select>
 						              {
 						                this.state.countries.map((dynamicData,key) =>
@@ -117,7 +117,7 @@ export default class Register extends React.Component {
 							        </div>
 							      </div>
 
-										<label class="checkbox">
+										<label className="checkbox">
 										  <input className="is-m-right" type="checkbox"/>
 										   Acepto los <Link to="/terms">Terminos y condiciones</Link>
 										</label>

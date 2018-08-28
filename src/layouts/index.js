@@ -10,7 +10,7 @@ import './scss/main.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Vipsportbook | beats | casinos | sports and more" />
-    <header class="main-header">
+    <header className="main-header">
     	<SubNavbar/>
     	<Navbar />
     </header>

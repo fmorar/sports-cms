@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const  SingupHome = () => (
   <div className="singup-cta">
     <h2 className="text-center">Open an account</h2>
-    <form action="" method="post" netlify>
+    <form action="" method="post">
       <div className="field">
         <label className="label label--singup">Name</label>
         <div className="control">

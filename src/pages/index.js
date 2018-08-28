@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Carousel from 'nuka-carousel'
 import Steps from '../components/Steps'
@@ -8,7 +7,6 @@ import CrytpCta from '../components/CrytpCta'
 import BonusesHome from '../components/BonusesHome'
 import ContactForm from '../components/ContactForm'
 import slide1 from '../img/slide1.jpg'
-import add from '../img/add.jpg'
 
 
 export default class IndexPage extends React.Component {
@@ -40,9 +38,6 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
-
     return (
       <section>
         <div className="hero">
@@ -83,7 +78,7 @@ export default class IndexPage extends React.Component {
                         <span>{(new Date(dynamicData.started_at)).getUTCHours()}:</span>
                         <span>{(new Date(dynamicData.started_at)).getMinutes()}</span>
                       </div>
-                      <div class="current-games__title column">
+                      <div className="current-games__title column">
                         <h4>{dynamicData.title}</h4>
                         <span className="broadcast">{dynamicData.broadcast}</span>
                       </div>
@@ -94,49 +89,7 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="section blog">
-          <div className="container latest-blog">
-            <div className="content">
-              <h3 className="has-text-weight-bold is-size-2">Blog</h3>
-            </div>
-            <div className="columns">
-              <div className="column is-9">
-                <div className="latest-blog">
-                  {posts
-                    .map(({ node: post }) => (
-                      <div
-                        className="content columns latest-blog__article"
-                        key={post.id}
-                      >
-                        <figure className="image column is-3">
-                          <img className="image__article" src={post.frontmatter.image} alt="Imagen from blog article"/>
-                        </figure>
-                        <div className="article-content column is-9">
-                          <p className="title">
-                            <Link to={post.fields.slug}>
-                              {post.frontmatter.title}
-                            </Link>
-                          </p>
-                          <p className="text-body">
-                            {post.excerpt}
-                          </p>
-                          <div className="info-wrapper columns">
-                            <small className="column">{post.frontmatter.date}</small>
-                            <Link className="button is-text column" to={post.fields.slug}>
-                              Keep Reading
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              </div>
-              <div className="column">
-                <img src={add} alt="" />
-              </div>
-            </div>
-            </div>
-        </div>
+
         <div className="section form-home">
           <ContactForm/>
         </div>
@@ -144,37 +97,3 @@ export default class IndexPage extends React.Component {
     )
   }
 }
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      limit: 4,
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 144)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            image
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-  }
-`

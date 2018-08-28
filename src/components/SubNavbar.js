@@ -10,7 +10,7 @@ const SubNavbar = () => (
     </ul>
     <div className="column singup">
       <span className="singup--ico">
-        <figure class="image is-32x32">
+        <figure className="image is-32x32">
           <img src={icoUser} alt="Vipsportbook"/>
         </figure>
       </span>

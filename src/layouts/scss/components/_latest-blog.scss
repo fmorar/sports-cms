@@ -1,3 +1,9 @@
+.blog--hero {
+	background: url("../../img/blog.jpg") center;
+	position: relative;
+	height: 250px;
+}
+
 .latest-blog__article {
 	background: white;
     border-radius: 25px;
@@ -19,5 +25,21 @@
 
 	.text-body {
 		color: $text-color;
+	}
+}
+
+.section-title__blog-post {
+	margin-top: -25px;;
+    left: 45%;
+}
+
+.tag-blog {
+	background-color: $secondary !important;
+	a {
+		color: white;
+
+		&:hover {
+			color: white;
+		}
 	}
 }
