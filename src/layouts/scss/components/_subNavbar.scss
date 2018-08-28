@@ -1,5 +1,8 @@
 .navbar-sub{
 	margin-top: 0rem;
+      @include until($desktop) {
+        margin: 0 !important;
+      }
 }
 
 .translate,

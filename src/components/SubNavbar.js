@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import icoUser from '../img/ico-user.svg'
 
 const SubNavbar = () => (
-  <div className="columns navbar-sub container is-fluid">
+  <div className="columns is-mobile is-fluid navbar-sub container is-fluid">
     <ul className="column translate">
       <li className="translate--item">en</li>
       <li className="translate--item">es</li>

@@ -37,6 +37,9 @@
 .has-dropdown>.navbar-dropdown {
 	.navbar-item {
 		color: $primary;
+		@include until($desktop) {
+			color: white;
+		}
 	}
 }
 
