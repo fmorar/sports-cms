@@ -17,7 +17,7 @@ const Footer = () => (
               <Link to="/">Affiliates</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Partner login</Link>
+              <Link to="/dictionary">Diccionario</Link>
             </li>
             <li className="sitemap--menu__item">
               <Link to="faq">Faq</Link>

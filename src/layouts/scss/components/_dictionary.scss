@@ -1,0 +1,19 @@
+.dictionary--hero {
+	background: url("../../img/faq.jpg") center;
+	background-size: cover;
+	position: relative;
+	height: 250px;
+	width: 100%;
+}
+
+.item-dictionary {
+    background: white;
+	border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.title-dictionary {
+	color: $secondary;
+	font-size: 1.5rem;
+}
