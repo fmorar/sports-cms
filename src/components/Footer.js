@@ -20,7 +20,7 @@ const Footer = () => (
               <Link to="/">Partner login</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Betting With Bitcoin</Link>
+              <Link to="faq">Faq</Link>
             </li>
           </ul>
         </div>

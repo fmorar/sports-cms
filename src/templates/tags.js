@@ -1,14 +1,18 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import Tag from '../img/tag.svg'
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+      <li className="tag--item columns" key={post.node.fields.slug}>
+        <picture className="column is-1">
+          <img className="image" width="50" src={Tag} alt=""/>
+        </picture>
+        <Link className="column" to={post.node.fields.slug}>
+          <p className="is-size-3">{post.node.frontmatter.title}</p>
         </Link>
       </li>
     ))
@@ -25,15 +29,12 @@ class TagRoute extends React.Component {
             <h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Tags</h2>
           </div>
           <div className="section">
-            <div className="container latest-blog">
+            <div className="container">
               <div className="columns">
-                <div
-                  className="column is-10 is-offset-1"
-                  style={{ marginBottom: '6rem' }}
-                >
+                <div className="column is-10 is-offset-1">
                   <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
                   <ul className="taglist">{postLinks}</ul>
-                  <p>
+                  <p className="pt-50">
                     <Link to="/tags/">Browse all tags</Link>
                   </p>
                 </div>
