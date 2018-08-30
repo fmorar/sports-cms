@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import BonusesCta from '../components/BonusesCta'
 
 export default class BonusesFreePlay extends React.Component {
   render() {
@@ -10,6 +11,13 @@ export default class BonusesFreePlay extends React.Component {
 			</div>
 			<div className="section">
 				<div className="container">
+					<nav class="breadcrumb" aria-label="breadcrumbs">
+					  <ul>
+					    <li><Link to="/">Inicio</Link></li>
+					    <li><Link to="/bonuses">bonus</Link></li>
+					    <li className="is-active"><a href="#" aria-current="page"> bonus free play</a></li>
+					  </ul>
+					</nav>
 					<div className="content">
 						<div className="columns is-multiline">
 							<div className="column is-12">
@@ -125,6 +133,7 @@ export default class BonusesFreePlay extends React.Component {
 					</div>
 				</div>
 			</div>
+			<BonusesCta/>
 		</div>
     )
   }

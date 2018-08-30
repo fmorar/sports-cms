@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Tag from '../img/tag.svg'
+import BonusesCta from '../components/BonusesCta'
 
 class TagRoute extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`
 
     return (
+      <div>
         <div className="tags">
           <div className="tags--hero">
             <h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Tags</h2>
@@ -42,6 +44,8 @@ class TagRoute extends React.Component {
             </div>
           </div>
         </div>
+        <BonusesCta/>
+      </div>
     )
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import casinoOnline from '../img/casino-online.jpg'
+import BonusesCta from '../components/BonusesCta'
 
 export default class Bets extends React.Component {
   render() {
@@ -75,6 +76,7 @@ export default class Bets extends React.Component {
 					</div>
 				</div>
 			</div>
+			<BonusesCta/>
 		</div>
     )
   }

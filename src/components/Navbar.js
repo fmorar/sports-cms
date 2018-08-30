@@ -27,9 +27,25 @@ const Navbar = () => (
         <Link className="navbar-item" to="/products">
          Deportes
         </Link>
-        <Link className="navbar-item" to="/products">
-         Sportbook
-        </Link>
+        <div className="navbar-item has-dropdown is-hoverable">
+          <span className="navbar-link">
+            Sportbook
+          </span>
+          <div className="navbar-dropdown is-boxed">
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Infomación
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Reglas deportivas
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Reglas de la casa
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/">
+              Tipos de Apuestas
+            </Link>
+          </div>
+        </div>
         <div className="navbar-item has-dropdown is-hoverable">
           <Link className="navbar-link" to="/bets">
             Apuestas

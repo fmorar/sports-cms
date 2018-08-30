@@ -4,6 +4,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import BonusesCta from '../components/BonusesCta'
 
 export const BlogPostTemplate = ({
   content,
@@ -57,6 +58,7 @@ export const BlogPostTemplate = ({
           </div>
         </div>
       </div>
+      <BonusesCta/>
     </div>
   )
 }

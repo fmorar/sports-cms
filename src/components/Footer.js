@@ -51,7 +51,7 @@ const Footer = () => (
               <Link to="/">Contact Us</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
             <li className="sitemap--menu__item">
               <Link to="/">General Rules</Link>

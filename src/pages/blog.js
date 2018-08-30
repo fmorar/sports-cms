@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import BonusesCta from '../components/BonusesCta'
 
 export default class Blog extends React.Component {
   render() {
@@ -8,48 +9,49 @@ export default class Blog extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-        <div className="blog">
-          <div className="blog--hero">
-            <h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Blog</h2>
-          </div>
-          <div className="section">
-            <div className="container latest-blog">
-              <div className="columns">
-                <div className="column">
-                  <div className="latest-blog">
-                    {posts
-                      .map(({ node: post }) => (
-                        <div
-                          className="content columns latest-blog__article"
-                          key={post.id}
-                        >
-                          <figure className="image column is-3">
-                            <img className="image__article" src={post.frontmatter.image} alt="Imagen from blog article"/>
-                          </figure>
-                          <div className="article-content column is-9">
-                            <p className="title">
-                              <Link to={post.fields.slug}>
-                                {post.frontmatter.title}
-                              </Link>
-                            </p>
-                            <p className="text-body">
-                              {post.excerpt}
-                            </p>
-                            <div className="info-wrapper columns">
-                              <small className="column">{post.frontmatter.date}</small>
-                              <Link className="button is-text column" to={post.fields.slug}>
-                                Keep Reading
-                              </Link>
-                            </div>
+      <div className="blog">
+        <div className="blog--hero">
+          <h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Blog</h2>
+        </div>
+        <div className="section">
+          <div className="container latest-blog">
+            <div className="columns">
+              <div className="column">
+                <div className="latest-blog">
+                  {posts
+                    .map(({ node: post }) => (
+                      <div
+                        className="content columns latest-blog__article"
+                        key={post.id}
+                      >
+                        <figure className="image column is-3">
+                          <img className="image__article" src={post.frontmatter.image} alt="Imagen from blog article"/>
+                        </figure>
+                        <div className="article-content column is-9">
+                          <p className="title">
+                            <Link to={post.fields.slug}>
+                              {post.frontmatter.title}
+                            </Link>
+                          </p>
+                          <p className="text-body">
+                            {post.excerpt}
+                          </p>
+                          <div className="info-wrapper columns">
+                            <small className="column">{post.frontmatter.date}</small>
+                            <Link className="button is-text column" to={post.fields.slug}>
+                              Keep Reading
+                            </Link>
                           </div>
                         </div>
-                      ))}
-                  </div>
+                      </div>
+                    ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <BonusesCta/>
+      </div>
     )
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import FaqComponent from '../components/FaqComponent'
+import BonusesCta from '../components/BonusesCta'
 
 export default class Faq extends React.Component {
 	componentDidMount() {
@@ -23,6 +24,7 @@ export default class Faq extends React.Component {
 					<FaqComponent/>
 				</div>
 			</div>
+			<BonusesCta/>
 		</div>
     )
   }
