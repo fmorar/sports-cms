@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-//import SearchData from '../components/SearchData'
+import BonusesCta from '../components/BonusesCta'
 
 export default class Dictionary extends React.Component {
 
@@ -383,28 +383,29 @@ export default class Dictionary extends React.Component {
 
   render() {
     return (
-			<div className="dictionary-page"> 
-				<div className="dictionary--hero">
-					<h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Diccionario</h2>
-				</div>
-				<div className="section">
-					<div className="container">
-			      <div>
-			      <div id="search" className="control">
-			        <input className="input is-rounded is-medium" type="search" onChange={this._handleChange} placeholder="buscar"/>
-			      </div>
-			        <ul>
-			          {this.state.dictonary.map(item => 
-			          	<li className="item-dictionary" key={item.id}>
-			          		<p className="title-dictionary">{item.term}</p>
-			          		<p className="is-size-6">{item.definition}</p>
-			          	</li>
-			          	)}
-			        </ul>
-			      </div>
-					</div>
+		<div className="dictionary-page"> 
+			<div className="dictionary--hero">
+				<h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Diccionario</h2>
+			</div>
+			<div className="section">
+				<div className="container">
+		      <div>
+		      <div id="search" className="control">
+		        <input className="input is-rounded is-medium" type="search" onChange={this._handleChange} placeholder="buscar"/>
+		      </div>
+		        <ul>
+		          {this.state.dictonary.map(item => 
+		          	<li className="item-dictionary" key={item.id}>
+		          		<p className="title-dictionary">{item.term}</p>
+		          		<p className="is-size-6">{item.definition}</p>
+		          	</li>
+		          	)}
+		        </ul>
+		      </div>
 				</div>
 			</div>
+			<BonusesCta/>
+		</div>
     )
   }
 }

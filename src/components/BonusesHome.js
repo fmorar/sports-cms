@@ -9,54 +9,52 @@ const BonusesHome = () => (
       <div className="images-grid">
       <div className="columns">
         <div className="image image-big column is-6">
-          <img src={bonuses01} alt=""/>
+          <Link to="/bonuses-crypto"><img src={bonuses01} alt=""/></Link>
           <p className="bonuses-info">
-            200%
+            Crypto
             <br/>
-            <span>Free play!</span>
+            <span>Bonus</span>
           </p>
-          <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
+          <Link className="button is-text button__bonuses" to="/bonuses-crypto">Obtener ahora!</Link>
         </div>
         <div className="column is-6">
           <div className="image-small--container">
             <div className="columns">
               <div className="image image-small column">
-                <img src={bonuses02} alt=""/>
+                <Link to="/bonuses-cash"><img src={bonuses02} alt=""/></Link>
                 <p className="bonuses-info">
-                  200%
+                  Bonos
                   <br/>
-                  <span>Free play!</span>
+                  <span>en Efectivo</span>
                 </p>
-                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/bonuses-cash">Obtener ahora!</Link>
               </div>
               <div className="image image-small column">
-                <img src={bonuses02} alt=""/>
+                <Link to="/bonuses-free-play"><img src={bonuses02} alt=""/></Link>
                 <p className="bonuses-info">
-                  200%
-                  <br/>
-                  <span>Free play!</span>
+                  Freeplay
                 </p>
-                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/bonuses-free-play">Obtener ahora!</Link>
               </div>
             </div>
             <div className="columns">
               <div className="image image-small column">
-                <img src={bonuses02} alt=""/>
+                <Link to="/bonuses-reload"><img src={bonuses02} alt=""/></Link>
                 <p className="bonuses-info">
-                  200%
+                  Reload
                   <br/>
-                  <span>Free play!</span>
+                  <span>Bonus</span>
                 </p>
-                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/bonuses-reload">Obtener ahora!</Link>
               </div>
               <div className="image image-small column">
-                <img src={bonuses02} alt=""/>
+               <Link to="/bonuses-referral"><img src={bonuses02} alt=""/></Link>
                 <p className="bonuses-info">
-                  200%
+                  Bonos
                   <br/>
-                  <span>Free play!</span>
+                  <span>de referidos</span>
                 </p>
-                <Link className="button is-text button__bonuses" to="/">Get Now!</Link>
+                <Link className="button is-text button__bonuses" to="/bonuses-referral">Obtener ahora!</Link>
               </div>
             </div>
           </div>
