@@ -24,7 +24,7 @@ export default class Bets extends React.Component {
 											<div className="column">
 												<h3>Racebook</h3>
 												<p className="text">
-													La emoción de entrar en un casino y sentir todas las posibilidades de llenar tus bolsillos mientras te diviertes, puede que sea uno de los sentimientos más satisfactorios. Si piensas en expertos en casino, somos nosotros. Es por eso que te traemos un espectacular servicio de casino virtual, donde podrá encontrar una gran variedad de juegos y entretenerse durante horas mientras hace mucho dinero. 
+									    		Seamos honestos, cuando pensamos en las carreras de caballos o galgos, es muy probable que te venga a la mente la emoción, adrenalina y velocidad. Disfrutar de estas carreras es una de las mayores emociones, entonces… ¿Por qué no hacer algo de dinero mientras se disfruta este deporte? En nuestra plataforma de apuestas en carreras, podrás encontrar TODOS los eventos más importantes del mundo, en cuanto a carreras de caballos y galgos, en más de 130 pistas a escoger. 
 												</p>
 												<Link to="/sing-up" class="button is-rounded">Play now!</Link>
 											</div>
@@ -44,7 +44,7 @@ export default class Bets extends React.Component {
 											<div className="column">
 												<h3>Casino Virtual</h3>
 										    <p>
-										    	Seamos honestos, cuando pensamos en las carreras de caballos o galgos, es muy probable que te venga a la mente la emoción, adrenalina y velocidad. Disfrutar de estas carreras es una de las mayores emociones, entonces… ¿Por qué no hacer algo de dinero mientras se disfruta este deporte? En nuestra plataforma de apuestas en carreras, podrás encontrar TODOS los eventos más importantes del mundo, en cuanto a carreras de caballos y galgos, en más de 130 pistas a escoger. 
+													La emoción de entrar en un casino y sentir todas las posibilidades de llenar tus bolsillos mientras te diviertes, puede que sea uno de los sentimientos más satisfactorios. Si piensas en expertos en casino, somos nosotros. Es por eso que te traemos un espectacular servicio de casino virtual, donde podrá encontrar una gran variedad de juegos y entretenerse durante horas mientras hace mucho dinero. 
 									    	</p>
 												<Link to="/sing-up" class="button is-rounded">Play now!</Link>
 											</div>

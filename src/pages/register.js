@@ -110,12 +110,6 @@ export default class Register extends React.Component {
 										  </div>
 										</div>
 
-							      <div className="field">
-							        <label className="label">Moneda de preferencia</label>
-							        <div className="control">
-							          <input className="input" type="text" placeholder="Moneda"/>
-							        </div>
-							      </div>
 
 										<label className="checkbox">
 										  <input className="is-m-right" type="checkbox"/>
@@ -133,7 +127,7 @@ export default class Register extends React.Component {
 									<p className="content has-text-centered">Ya tienes una cuenta? <Link to="sing-up">Inicia sesión</Link></p>
 							  </div>
 							</div>
-							<div className="column is-paddingless">
+							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only">
 								<img className="is-inherit" src={RegisterImg} alt=""/>
 							</div>
 					  </div>

@@ -44,7 +44,7 @@ export default class SingUp extends React.Component {
 									<p className="content has-text-centered">No tienes una cuenta? <Link to="register">Registrate</Link></p>
 							  </div>
 							</div>
-							<div className="column is-paddingless">
+							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only">
 								<img className="is-inherit" src={SingUP} alt=""/>
 							</div>
 					  </div>

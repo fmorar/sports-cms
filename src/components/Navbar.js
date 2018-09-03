@@ -35,7 +35,7 @@ const Navbar = () => (
             <Link className="navbar-item navbar-item__responsive" to="/">
               Infomación
             </Link>
-            <Link className="navbar-item navbar-item__responsive" to="/">
+            <Link className="navbar-item navbar-item__responsive" to="/sports-rules">
               Reglas deportivas
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/">
@@ -63,7 +63,7 @@ const Navbar = () => (
           </div>
         </div>
         <Link className="navbar-item" to="/products">
-         Banking
+         Pagos
         </Link>
         <Link className="navbar-item" to="/blog">
          Blog
