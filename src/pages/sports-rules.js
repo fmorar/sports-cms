@@ -22,16 +22,16 @@ export default class SportsRules extends React.Component {
 						    <li>
 						      <AnchorLink href='#baseball'>Baseball</AnchorLink >
 						      <ul>
-						        <li><a>Selección de Lanzadores</a></li>
-						        <li><a>MLB - Jugadas Especiales (props) / SERIE (torneo de múltiples partidos)</a></li>
-						        <li><a>Basbell Internacional y sus Reglas</a></li>
+						        <li><AnchorLink href="#lanzadores">Selección de Lanzadores</AnchorLink></li>
+						        <li><AnchorLink href="#jugadas-especiales">MLB - Jugadas Especiales (props) / SERIE (torneo de múltiples partidos)</AnchorLink></li>
+						        <li><AnchorLink href="#baseball-internacional">Basbell Internacional y sus Reglas</AnchorLink></li>
 						      </ul>
 						    </li>
 						    <li>
 						    	<AnchorLink href='#basketball'>Basketball</AnchorLink>
 									<ul>
-										<li><a>Tiempo de Juego Oficial</a></li>
-										<li><a>Basketball Internacional</a></li>
+										<li><AnchorLink href="basketball-tiempo">Tiempo de Juego Oficial</AnchorLink></li>
+										<li><AnchorLink href="basketball-internacional">Basketball Internacional</AnchorLink></li>
 									</ul>
 						    </li>
 						    <li>
@@ -43,8 +43,8 @@ export default class SportsRules extends React.Component {
 						    <li>
 						    	<AnchorLink href="#futbol-americano">Fútbol Americano</AnchorLink>
 									<ul>
-										<li><a>Tiempo de Juego Oficial</a></li>
-										<li><a>Jugadas Especiales (PROPS) para Liga NFL</a></li>
+										<li><AnchorLink href="#futbol-americano-tiempo">Tiempo de Juego Oficial</AnchorLink></li>
+										<li><AnchorLink href="#futbol-americano-especiales">Jugadas Especiales (PROPS) para Liga NFL</AnchorLink></li>
 									</ul>
 						    </li>
 						    <li>
@@ -65,7 +65,7 @@ export default class SportsRules extends React.Component {
 						    <li>
 						    	<AnchorLink href="#futbol">Fútbol</AnchorLink>
 						    	<ul>
-										<li>Tipos de apuestas de fútbol</li>
+										<li><AnchorLink href="#futbol-apuestas">Tipos de apuestas de fútbol</AnchorLink></li>
 						    	</ul>
 						    </li>
 						    <li>
@@ -82,7 +82,7 @@ export default class SportsRules extends React.Component {
 								  <p>
 										Ganadores y perdedores serán oficiales después de 5 entradas (‘innings’) de juego a menos que el equipo de casa esté ganando después de 4 ½ entradas. Si un juego es cancelado o aplazado el marcador de la última entrada completa será el ganador. Si el equipo de casa anota hasta un empate o toma el control en la primera parte de la entrada entonces en el momento en que el juego es llamado a concluir el marcador determinará al ganador. El dinero será devuelto si el equipo de casa empata el juego y luego se suspende el partido. Cuando se está jugando los totales de carreras (arriba/abajo) el juego tiene que llegar a 9 entradas (8 ½ si el equipo de casa está ganando), para que haya acción. Los pronósticos de carreras totales serán cancelados si hay un cambio de lanzador antes de que ambos lanzadores ya listados hayan hecho por lo menos un lanzamiento. Las reglas para los pronósticos de línea de carreras son las mismas que aquellas de totales.
 								  </p>
-								  <h3>Selección de Lanzadores</h3>
+								  <h3 id="lanzadores">Selección de Lanzadores</h3>
 								  <p>
 										Los pronósticos de béisbol serán aceptados en la siguiente manera:
 										Acción
@@ -101,7 +101,7 @@ export default class SportsRules extends React.Component {
 								    	Si los lanzadores no son exactamente aquellos ya listados en el muestrario y/o su boleto, entonces el pronóstico se considerará "sin acción".
 								    </li>
 								  </ul>
-								  <h3>MLB - Jugadas Especiales (props) / SERIE (torneo de múltiples partidos)</h3>
+								  <h3 id="jugadas-especiales">MLB - Jugadas Especiales (props) / SERIE (torneo de múltiples partidos)</h3>
 								  <p>
 										Los pronósticos en las series se basan en los 3 PRIMEROS PARTIDOS JUGADOS de cada serie. Ninguno de los 2 equipos puede jugar con otro contrincante entre partidos ya programados. Si uno de los 3 partidos es aplazado, todos los pronósticos (acción) siguen válidos. Si se juegan menos de 3 partidos entonces el equipo con la ventaja es el ganador de la serie.
 										Todo pronóstico está basado en acción (sin lanzadores listados).
@@ -136,7 +136,7 @@ export default class SportsRules extends React.Component {
 									<p>
 										Todos los pronósticos se basan en lanzadores listados. El partido debe de durar 8 ½ entradas como mínimo, si el equipo de casa se está ganando, de otro modo el partido tiene que ser concluido en su totalidad. Todo pronóstico se basa en lanzadores listados. El partido tiene que durar 5 entradas completas, como mínimo, para tener "acción". Las ultimas 4 entradas más las entradas extra estarán disponibles hasta el primer lanzamiento de juego.
 									</p>
-									<h3>Basbell Internacional y sus Reglas</h3>
+									<h3 id="baseball-internacional">Basbell Internacional y sus Reglas</h3>
 									<p>
 										Todos los juegos deben de empezar en la fecha y hora estipulada para que las apuestas tengan acción
 										Si se suspende una jugada antes de que se complete el tiempo de juego estipulado en el evento, los pronósticos no tendrán acción.
@@ -147,7 +147,7 @@ export default class SportsRules extends React.Component {
 								<br/>
 								<div id="basketball">
 									<h2>Basketball</h2>
-									<h3>Tiempo de Juego Oficial</h3>
+									<h3 id="basketball-tiempo">Tiempo de Juego Oficial</h3>
 									<p>
 										Los pronósticos son oficiales luego de 43 minutos de juego en partidos de NBA o 35 minutos de juego en partidos de baloncesto universitario y WNBA. De no cumplirse el tiempo, los pronósticos se cancelan.
 										<br/>
@@ -161,7 +161,7 @@ export default class SportsRules extends React.Component {
 											Tiempo extra no cuenta para apuestas seleccionadas a 4to cuarto.
 										</li>
 									</ul>
-									<h3>Basquetbol Internacional</h3>
+									<h3 id="basketball-internacional">Basquetbol Internacional</h3>
 									<p>
 										Todos los juegos deben de empezar en la fecha y hora estipulada para que las apuestas tengan acción
 										<br/>
@@ -216,12 +216,12 @@ export default class SportsRules extends React.Component {
 								<br/>
 								<div id="futbol-americano">
 									<h2>Fútbol Americano</h2>
-									<h3>Tiempo de Juego Oficial</h3>
+									<h3 id="futbol-americano-tiempo">Tiempo de Juego Oficial</h3>
 									<p>
 										Los pronósticos se consideran oficiales después de 55 minutos de juego. Si no se completan los 55 minutos de juego, los pronósticos de los equipos serán anulados, y las jugadas combinadas se reducirán al siguiente nivel de la forma correspondiente. Los pronósticos de primera y segunda mitad, y de todos los cuartos serán válidos cuando se complete el período en cuestión. Si por las condiciones el período es acortado, todos los pronósticos en ese período serán anulados. Los pronósticos de línea de diferencia de puntos, línea de dinero, totales del juego, y todos los pronósticos en la segunda mitad incluyen el resultado del tiempo extra. Los pronósticos del último cuarto no incluyen el resultado del tiempo extra.
 										El partido debe de ser jugado en el lugar y fecha programado.
 									</p>
-									<h3>Jugadas Especiales (PROPS) para Liga NFL</h3>
+									<h3 id="futbol-americano-especiales">Jugadas Especiales (PROPS) para Liga NFL</h3>
 									<h4>NFL - EQUIPO QUE ANOTA PRIMERO:</h4>
 									<p>Primer equipo que anote en el juego. Si un equipo anota y el juego se cancela o pospone para después, todos los pronósticos serán válidos sin importar cuantos minutos hayan pasado.</p>
 									<h4>NFL - EQUIPO QUE ANOTA ÚLTIMO:</h4>
@@ -372,7 +372,7 @@ export default class SportsRules extends React.Component {
 											Para las apuestas de la Copa Mundial de la FIFA, si un partido no comienza en la hora programada exacta o no comienza en la fecha de inicio original, todas las apuestas en ese partido se mantendrán y se resolverán cuando el juego se complete, independientemente de la fecha o tiempo jugado. Se aplicará la misma regla en caso de que un juego se posponga o abandone antes de la finalización de 90 minutos.
 										</li>
 									</ul>
-									<h3>Tipos de apuestas de fútbol</h3>
+									<h3 id="futbol-apuestas">Tipos de apuestas de fútbol</h3>
 									<h4>Hándicap Asiático o Línea de Gol</h4>
 									<p>
 										Los juegos de fútbol pueden tener un Hándicap individual o un Hándicap doble. 

@@ -11,7 +11,8 @@ const Footer = () => (
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
               <Link to="/about">
-              About us</Link>
+                Sobre Nosotros
+              </Link>
             </li>
             <li className="sitemap--menu__item">
               <Link to="/">Affiliates</Link>
@@ -25,41 +26,41 @@ const Footer = () => (
           </ul>
         </div>
         <div className="sitemap__block column">
-          <h4>Beatting</h4>
+          <h4>Pronósticos</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
-              <Link to="/">Sportsbook</Link>
+              <Link to="/bets#pronosticosVivo">Pronósticos en vivo</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Live Casino</Link>
+              <Link to="/bets#casinoVivo">Casino en vivo</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Virtual Casino</Link>
+              <Link to="/bets#casinoVirtual">Casino virtual</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Racebook</Link>
+              <Link to="/bets#racebook">Racebook</Link>
             </li>
           </ul>
         </div>
         <div className="sitemap__block column">
-          <h4>Help</h4>
+          <h4>Ayuda</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
-              <Link to="/">Banking</Link>
+              <Link to="/">Pagos</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Contact Us</Link>
+              <Link to="/">Contactenos</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/privacy-policy">Privacy Policy</Link>
+              <Link to="/privacy-policy">Politicas de privacidad</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">General Rules</Link>
+              <Link to="/house-rules">Reglas de la casa</Link>
             </li>
           </ul>
         </div>
         <div className="sitemap__block column">
-          <h4>Social</h4>
+          <h4>Siguenos</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
               <Link to="/">Facebook</Link>

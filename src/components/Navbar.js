@@ -25,7 +25,7 @@ const Navbar = () => (
          Bonus
         </Link>
         <Link className="navbar-item" to="/products">
-         Deportes
+         Lineas
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
           <span className="navbar-link">
@@ -38,7 +38,7 @@ const Navbar = () => (
             <Link className="navbar-item navbar-item__responsive" to="/sports-rules">
               Reglas deportivas
             </Link>
-            <Link className="navbar-item navbar-item__responsive" to="/">
+            <Link className="navbar-item navbar-item__responsive" to="/house-rules">
               Reglas de la casa
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/">
@@ -59,6 +59,9 @@ const Navbar = () => (
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/bets#casinoVivo">
               Casino en vivo
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/bets#pronosticosVivo">
+              Pronósticos en vivo
             </Link>
           </div>
         </div>
