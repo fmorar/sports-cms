@@ -5,12 +5,12 @@ const CrytpCta = () => (
   <div className="container">
     <div className="columns">
       <h2 className= "crypto__title column is-9">
-        How to use cryptocurrency 
+        Como usar criptomonedas 
         <br /> 
-        to beatting
+        para jugar
       </h2>
       <div className="column column__flex">
-        <Link className="button is-outlined is-rounded button__center" to="#">Learn more!</Link>
+        <Link className="button is-outlined is-rounded button__center" to="#">Aprende más!</Link>
       </div>
     </div>
   </div>

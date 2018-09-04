@@ -61,7 +61,7 @@ export default class IndexPage extends React.Component {
         <div className="section real-time-data">
           <div className="container">
             <div className="content">
-              <h3 className="has-text-weight-bold is-size-2">Currently Games</h3>
+              <h3 className="has-text-weight-bold is-size-2">Proximos juegos</h3>
             </div>
             <div className="columns">
               {

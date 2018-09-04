@@ -5,21 +5,21 @@ import add2 from '../img/contact-img.png'
 const ContactForm = () => (
   <div className="container">
     <div className="content">
-      <h3 className="has-text-weight-bold is-size-2">Contact us</h3>
+      <h3 className="has-text-weight-bold is-size-2">Contactenos</h3>
     </div>
     <div className="columns">
       <div className="column">
         <form action="" method="post">
           <div className="field">
-            <label className="label label--contact">Name</label>
+            <label className="label label--contact">Nombre</label>
             <div className="control">
-              <input className="input" type="text" placeholder="Full name"/>
+              <input className="input" type="text" placeholder="Nombre completo"/>
             </div>
           </div>
           <div className="field">
-            <label className="label label--contact">Phone</label>
+            <label className="label label--contact">Teléfono</label>
             <div className="control">
-              <input className="input" type="text" placeholder="Phone number"/>
+              <input className="input" type="text" placeholder="Teléfono"/>
             </div>
           </div>
           <div className="field">
@@ -29,15 +29,15 @@ const ContactForm = () => (
             </div>
           </div>
           <div className="field">
-            <label className="label label--contact">Message</label>
+            <label className="label label--contact">Mensaje</label>
             <div className="control">
-              <textarea className="textarea" rows="7" placeholder="Message here"></textarea>
+              <textarea className="textarea" rows="7" placeholder="Mensaje"></textarea>
             </div>
           </div>
 
           <div className="field">
             <div className="control">
-              <button className="button button--contact is-large is-fullwidth">Submit</button>
+              <button className="button button--contact is-large is-fullwidth">Enviar</button>
             </div>
           </div>
         </form>

@@ -55,7 +55,7 @@ const Navbar = () => (
               Reglas de la casa
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/">
-              Tipos de pronosticos
+              Tipos de pronósticos
             </Link>
           </div>
         </div>

@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import bonuses01 from '../img/bonuses-01.jpg'
 import bonuses02 from '../img/bonuses-02.jpg'
+import bonuses03 from '../img/bonuses-03.jpg'
+import bonuses04 from '../img/bonuses-04.jpg'
+import bonuses05 from '../img/bonuses-05.jpg'
 
 const Bonuses = () => (
   <div className="container">
@@ -31,7 +34,7 @@ const Bonuses = () => (
               </div>
 
               <div className="image image-small column is-6">
-                <Link to="/bonuses-reload"><img src={bonuses02} alt=""/></Link>
+                <Link to="/bonuses-reload"><img src={bonuses03} alt=""/></Link>
                 <p className="bonuses-info">
                   Reload
                   <br/>
@@ -43,7 +46,7 @@ const Bonuses = () => (
             </div>
             <div className="columns">
               <div className="image image-small column is-6">
-               <Link to="/bonuses-referral"><img src={bonuses02} alt=""/></Link>
+               <Link to="/bonuses-referral"><img src={bonuses04} alt=""/></Link>
                 <p className="bonuses-info">
                   Bonos
                   <br/>
@@ -52,7 +55,7 @@ const Bonuses = () => (
                 <Link className="button is-text button__bonuses" to="/bonuses-referral">Obtener ahora!</Link>
               </div>
               <div className="image image-small column is-6">
-               <Link to="/register"><img src={bonuses02} alt=""/></Link>
+               <Link to="/register"><img src={bonuses05} alt=""/></Link>
                 <p className="bonuses-info">
                   Registrate
                   <br/>
