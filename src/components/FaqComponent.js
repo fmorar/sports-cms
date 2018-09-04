@@ -18,7 +18,7 @@ const FaqModule = () => (
     <div className="accordion-item">
       <a>¿Cómo deposito el dinero en mi cuenta vip?</a>
       <div className="content">
-        <p>Ofrecemos una amplia variedad de métodos para depositar fondos en su cuenta de juegos de apuestas en línea. Para obtener una lista completa y una descripción de los métodos de depósito, consulte nuestra <Link to="/">Banking</Link></p>
+        <p>Ofrecemos una amplia variedad de métodos para depositar fondos en su cuenta de juegos de apuestas en línea. Para obtener una lista completa y una descripción de los métodos de depósito, consulte nuestra politica de <Link style={{display: 'inline'}} className="is-link" to="/">Pagos</Link></p>
       </div>
     </div>
     <div className="accordion-item">

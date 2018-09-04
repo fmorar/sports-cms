@@ -54,3 +54,21 @@
 	position: relative;
 	height: 250px;
 }
+
+.vip-bonuses {
+	min-height: 615px;
+	@include until($desktop) {
+		min-height: auto;
+	}
+}
+
+.vip-bonuses-btn {
+	position: absolute; 
+	bottom: 4%; 
+	width: 90% !important;
+	@include until($desktop) {
+		position: initial; 
+		bottom: 0; 
+		width: 100%;
+	}
+}

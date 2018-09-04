@@ -4,7 +4,7 @@ import Carousel from 'nuka-carousel'
 import Steps from '../components/Steps'
 import SingupHome from '../components/SingupHome'
 import CrytpCta from '../components/CrytpCta'
-import BonusesHome from '../components/BonusesHome'
+import Bonuses from '../components/Bonuses'
 import ContactForm from '../components/ContactForm'
 import slide1 from '../img/slide1.jpg'
 
@@ -55,11 +55,8 @@ export default class IndexPage extends React.Component {
           <Steps/>
           <div className="hidden-height"></div>
         </div>
-        <div className="crypto section">
-          <CrytpCta/>
-        </div>
         <div className="section">
-          <BonusesHome/>
+          <Bonuses/>
         </div>
         <div className="section real-time-data">
           <div className="container">
@@ -89,8 +86,10 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-
-        <div className="section form-home">
+        <div className="crypto section">
+          <CrytpCta/>
+        </div>
+        <div id="contact" className="section form-home">
           <ContactForm/>
         </div>
       </section>

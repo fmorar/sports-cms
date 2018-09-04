@@ -10,7 +10,7 @@ export default class BonusesReferral extends React.Component {
 			</div>
 			<div className="section">
 				<div className="container">
-					<nav class="breadcrumb" aria-label="breadcrumbs">
+					<nav className="breadcrumb" aria-label="breadcrumbs">
 					  <ul>
 					    <li><Link to="/">Inicio</Link></li>
 					    <li><Link to="/bonuses">bonus</Link></li>

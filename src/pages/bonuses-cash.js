@@ -12,7 +12,7 @@ export default class BonusesEfectivo extends React.Component {
 			<div className="section">
 				<div className="container">
 					<div className="content">
-						<nav class="breadcrumb" aria-label="breadcrumbs">
+						<nav className="breadcrumb" aria-label="breadcrumbs">
 						  <ul>
 						    <li><Link to="/">Inicio</Link></li>
 						    <li><Link to="/bonuses">bonus</Link></li>

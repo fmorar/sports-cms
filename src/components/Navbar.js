@@ -21,9 +21,22 @@ const Navbar = () => (
         <Link className="navbar-item navbar-item__parent" to="/">
          Inicio
         </Link>
-        <Link className="navbar-item" to="/bonuses">
-         Bonus
-        </Link>
+        <div className="navbar-item has-dropdown is-hoverable">
+          <span className="navbar-link">
+            Bonus
+          </span>
+          <div className="navbar-dropdown is-boxed">
+            <Link className="navbar-item navbar-item__responsive" to="/bonuses">
+              Bonus regulares
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/bonuses-free-play">
+              Free plays
+            </Link>
+            <Link className="navbar-item navbar-item__responsive" to="/bonuses-vip">
+              Vip especiales
+            </Link>
+          </div>
+        </div>
         <Link className="navbar-item" to="/products">
          Lineas
         </Link>
@@ -32,7 +45,7 @@ const Navbar = () => (
             Sportbook
           </span>
           <div className="navbar-dropdown is-boxed">
-            <Link className="navbar-item navbar-item__responsive" to="/">
+            <Link className="navbar-item navbar-item__responsive" to="/info">
               Infomación
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/sports-rules">
@@ -42,13 +55,13 @@ const Navbar = () => (
               Reglas de la casa
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/">
-              Tipos de Apuestas
+              Tipos de pronosticos
             </Link>
           </div>
         </div>
         <div className="navbar-item has-dropdown is-hoverable">
           <Link className="navbar-link" to="/bets">
-            Apuestas
+            Pronósticos
           </Link>
           <div className="navbar-dropdown is-boxed">
             <Link className="navbar-item navbar-item__responsive" to="/bets#racebook">
