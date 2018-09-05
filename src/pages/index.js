@@ -7,6 +7,8 @@ import CrytpCta from '../components/CrytpCta'
 import Bonuses from '../components/Bonuses'
 import ContactForm from '../components/ContactForm'
 import slide1 from '../img/slide1.jpg'
+import slide2 from '../img/slide2.jpg'
+import slide3 from '../img/slide3.jpg'
 
 
 export default class IndexPage extends React.Component {
@@ -49,8 +51,8 @@ export default class IndexPage extends React.Component {
             afterSlide={slideIndex => this.setState({ slideIndex })}
           >
             <img src={slide1} />
-            <img src={slide1} />
-            <img src={slide1} />
+            <img src={slide2} />
+            <img src={slide3} />
           </Carousel>
           <Steps/>
           <div className="hidden-height"></div>

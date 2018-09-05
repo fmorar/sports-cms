@@ -54,7 +54,7 @@ const Navbar = () => (
             <Link className="navbar-item navbar-item__responsive" to="/house-rules">
               Reglas de la casa
             </Link>
-            <Link className="navbar-item navbar-item__responsive" to="/">
+            <Link className="navbar-item navbar-item__responsive" to="/sports-predictions">
               Tipos de pronósticos
             </Link>
           </div>
