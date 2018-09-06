@@ -25,7 +25,7 @@ export default class BonusesVip extends React.Component {
 								  <div className="card-content vip-bonuses">
 								    <div className="columns">
 								    	<div className="column">
-												<h2 className="title">Momio</h2>
+												<h2 className="title">Momio (moneyline)</h2>
 												<p>Ofrece a todos nuestros clientes nuestros sin <strong>juice</strong> (momio) todos los días a discreción de nuestros managers.</p>
 												<p>Reglas</p>
 												<ul>
