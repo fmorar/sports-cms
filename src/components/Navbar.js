@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import logo from '../img/logo.svg'
-
 const Navbar = () => (
   <nav className="navbar is-transparent container is-fluid">
     <div className="navbar-brand">
@@ -78,9 +77,9 @@ const Navbar = () => (
             </Link>
           </div>
         </div>
-        <Link className="navbar-item" to="/products">
+        <p className="navbar-item" data-target="modal">
          Pagos
-        </Link>
+        </p>
         <Link className="navbar-item" to="/blog">
          Blog
         </Link>

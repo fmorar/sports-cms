@@ -1,0 +1,34 @@
+.modal {
+  padding-top: 15%; 
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-card-head,
+.modal-card-foot {
+    background: white;
+}
+
+.delete {
+    background-color: #f4113f;
+}
+
+.delete:hover, 
+.delete:focus {
+    background-color: #f4113f;
+}
+
+.modal-card-title {
+    margin-bottom: 0;
+}
+
+.modal-card-body {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

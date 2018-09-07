@@ -5,11 +5,15 @@ const BonusesCta = () => (
   <div className="bonuses-cta">
     <div className="container">
       <div className="columns">
-        <h2 className= "bonuses__title column is-9">
-          200% FREE PLAY!
+      <div className="column is-9">
+        <h2 className= "bonuses__title">
+          Programa de lealtad
         </h2>
+        <br/>
+        <p style={{color: 'white'}}>Si tu cuenta tiene más 6 meses de actividad, recibe un bonus especial</p>
+      </div>
         <div className="column column__flex">
-          <Link className="button is-rounded button__center" to="#">Get now!</Link>
+          <Link className="button is-rounded button__center" to="#">Obtener ahora</Link>
         </div>
       </div>
     </div>

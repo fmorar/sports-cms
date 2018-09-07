@@ -3,6 +3,15 @@ import Link from 'gatsby-link'
 import BonusesCta from '../components/BonusesCta'
 
 export default class BonusesEfectivo extends React.Component {
+  state = { show: false }
+
+  showModal = () => {
+    this.setState({ show: true });
+  }
+  
+  hideModal = () => {
+    this.setState({ show: false });
+  }
   render() {
     return (
 		<div className="bonuses-page">
@@ -28,10 +37,8 @@ export default class BonusesEfectivo extends React.Component {
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 							  			<p className="column is-marginless">$50.00 - $1000.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">18x - Rollover</p>
-							        <Link className="button is-rounded mt-5" to="/register">
-							         Obtener
-							        </Link>
+							  			<p className="column is-marginless">12x - Rollover</p>
+						        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
 								  </div>
 								</div>
@@ -45,10 +52,8 @@ export default class BonusesEfectivo extends React.Component {
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 								  			<p className="column is-marginless">$50.00 - $1000.00</p>
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-								  			<p className="column is-marginless">14x - Rollover</p>
-								        <Link className="button is-rounded mt-5" to="/register">
-								         Obtener
-								        </Link>
+								  			<p className="column is-marginless">9x - Rollover</p>
+						        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 									    </div>
 								    </div>
 								  </div>
@@ -63,10 +68,8 @@ export default class BonusesEfectivo extends React.Component {
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 								  			<p className="column is-marginless">$50.00 - $1000.00</p>
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-								  			<p className="column is-marginless">10x - Rollover</p>
-								        <Link className="button is-rounded mt-5" to="/register">
-								         Obtener
-								        </Link>
+								  			<p className="column is-marginless">6x - Rollover</p>
+						        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 									    </div>
 								    </div>
 								  </div>
@@ -81,10 +84,8 @@ export default class BonusesEfectivo extends React.Component {
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 								  			<p className="column is-marginless">$50.00 - $1000.00</p>
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-								  			<p className="column is-marginless">6x - Rollover</p>
-								        <Link className="button is-rounded mt-5" to="/register">
-								         Obtener
-								        </Link>
+								  			<p className="column is-marginless">3x - Rollover</p>
+							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 									    </div>
 								    </div>
 								  </div>
@@ -96,40 +97,47 @@ export default class BonusesEfectivo extends React.Component {
 								    <div className="content">
 								    	<h3>Términos y condiciones</h3>
 							    		<p>
-											Esta promoción aplica únicamente para jugadores recreativos.
-											Solo es válida una única promoción por depósito.
-											Válida únicamente para los residentes de América o en lugares en donde sean autorizados por la Administración.
-										</p>
-
-										<p>
-											La promocion estara disponible para los clientes en las líneas de juego regulares, con el 'juice' (ganancia) predeterminado para cada una de ellas.
-											Aplica únicamente para los depósitos que se realicen con bitcoins.
-											Se deben canjear los bonos al momento de hacer el depósito y antes de ingresar la apuesta.
-										</p>
-
-										<p>	
-											El re-uso (rollover) se basa en los depósitos + Tarifas de transferencia si las hay + Las ganancias de las jugadas gratis.
-										</p>
-
-										<p>
-											Esta promoción tiene una retención de dos semanas.
-											En el Casino (Acción) y las Carreras de Caballos (Acción) no contarán para el re-uso de las jugadas.
-										</p>
-
-										<p>
-											Aplica unicamente para depósitos regulares y Bitcoins.
-											Todos los bonos deben ser reclamados (canjeados) al momento de realizar el depósito y después de ingresar cualquier apuesta. Cualquier excepción aplica únicamente bajo la discreción y aprobación de la Administración.
-										</p>
-
-										<p>
-											Los créditos promocionales no utilizados caducarán después de un periodo de 90 días.
-											Los retiros recientes deben reponerse antes de la elegibilidad de la bonificación.
-											La administración se reserva el derecho de anular o revocar las bonificaciones a su discreción.
-										</p>
-
-										<p>
-											Cualquier bonificación aplicable debe reclamarse al momento del depósito y antes de hacer uso del dinero depositado. Si no se reclama el bono en este momento, se perderá.
-										</p>
+												Aplica únicamente para los depósitos regulares. 
+											</p>
+											<p>
+												Se deben obtener los bonos al momento de hacer el depósito y antes de ingresar la apuesta. Cualquier excepción aplica únicamente bajo la discreción y aprobación de la Administración.
+											</p>
+											<p>	
+												Esta promoción aplica únicamente para jugadores recreativos. 
+											</p>
+											<p>
+												Es válida una única promoción por depósito. 
+											</p>
+											<p>
+												Válida únicamente para los residentes de América o en lugares en donde sean autorizados por la Administración.
+											</p>
+											<p>
+												La promoción puede ser combinada con otras promociones a discreción de la administración.
+											</p>
+											<p>
+												El re-uso (rollover) se basa en los depósitos + Tarifas de transferencia si las hay + Las ganancias de las jugadas gratis.
+											</p>
+											<p>
+												Esta promoción tiene una retención de dos semanas. 
+											</p>
+											<p>
+												En el Casino y las Carreras de Caballos no contarán para el re-uso de las jugadas. 
+											</p>
+											<p>
+												Los créditos promocionales no utilizados caducarán después de un periodo de 90 días. 
+											</p>
+											<p>
+												Los retiros recientes deben reponerse antes de ser elegible para una bonificación. 
+											</p>
+											<p>
+												La administración se reserva el derecho de anular o revocar las bonificaciones a su discreción. 
+											</p>
+											<p>
+												El bonus máximo otorgado es de $1000.
+											</p>
+											<p>
+												Los Bonos se dan para incentivar a los jugadores y aumentar sus oportunidades de ganar. El aceptar un bono es opcional y al hacerlo, el jugador se da por entendido y acoge las condiciones y Reglas Generales de Bono, comprometiéndose así a jugar el monto especificado antes de solicitar un retiro. El usuario tiene la opción no solicitar el bono.
+											</p>
 								    </div>
 								  </div>
 								</div>
@@ -139,7 +147,39 @@ export default class BonusesEfectivo extends React.Component {
 				</div>
 			</div>
 			<BonusesCta/>
+    	<Modal show={this.state.show} handleClose={this.hideModal} >
+				<div className="columns">
+					<div className="column">
+						<div className="content">
+							<h4 className="text-center">Bitcoins</h4>
+						</div>
+					</div>
+					<div className="column">
+						<div className="content">
+							<h4 className="text-center">Monero</h4>
+						</div>
+					</div>
+				</div>
+      </Modal>
 		</div>
     )
   }
 }
+
+const Modal = ({ handleClose, show, children }) => {
+const showHideClassName = show ? 'modal display-block' : 'modal display-none';
+  return (
+		<div className={showHideClassName}>
+		  <div className="modal-background"></div>
+		  <div className="modal-card">
+		    <header className="modal-card-head">
+		      <p className="modal-card-title text-center">Metodos de pago</p>
+		      <button className="delete" aria-label="close" onClick={handleClose}></button>
+		    </header>
+		    <section className="modal-card-body">
+		      {children}
+		    </section>
+		  </div>
+		</div>
+  );
+};

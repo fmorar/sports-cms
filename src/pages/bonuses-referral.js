@@ -1,7 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import BonusesCta from '../components/BonusesCta'
 
 export default class BonusesReferral extends React.Component {
+  state = { show: false }
+
+  showModal = () => {
+    this.setState({ show: true });
+  }
+  
+  hideModal = () => {
+    this.setState({ show: false });
+  }
   render() {
     return (
 		<div className="bonuses-page">
@@ -23,24 +33,54 @@ export default class BonusesReferral extends React.Component {
 								<div className="card">
 								  <div className="card-content">
 								    <div className="columns">
-							  			<p className="column is-marginless">25% Bono de referido</p>
+							  			<p className="column is-marginless">50% Bono de referido</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">$200.00 - $1000.00</p>
+							  			<p className="column is-marginless">$300.00 - $500.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">10x - Rollover</p>
-								        <Link className="button is-rounded mt-5" to="/register">
-								         Obtener
-								        </Link>
+							  			<p className="column is-marginless">12x - Rollover Free play $100</p>
+							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
+								  </div>
+								</div>
+							</div>
+							<div className="column is-12">
+								<div className="card">
+								  <div className="card-content">
+								    <div className="columns">
+							  			<p className="column is-marginless">30% Bono de referido</p>
+							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
+							  			<p className="column is-marginless">$200.00 - $300.00</p>
+							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
+							  			<p className="column is-marginless">9x - Rollover Free play $50</p>
+							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
+								    </div>
+								  </div>
+								</div>
+							</div>
+							<div className="column is-12">
+								<div className="card">
+								  <div className="card-content">
+								    <div className="columns">
+							  			<p className="column is-marginless">20% Bono de referido</p>
+							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
+							  			<p className="column is-marginless">$100.00 - $200.00</p>
+							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
+							  			<p className="column is-marginless">6x - Rollover Free play $20</p>
+							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
+								    </div>
+								  </div>
+								</div>
+							</div>
+							<div className="column is-12">
+								<div className="card">
+								  <div className="card-content">
 								    <div className="columns">
 							  			<p className="column is-marginless">10% Bono de referido</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">$50.00 - $190.00</p>
+							  			<p className="column is-marginless">$50.00 - $100.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">5x - Rollover</p>
-								        <Link className="button is-rounded mt-5" to="/register">
-								         Obtener
-								        </Link>
+							  			<p className="column is-marginless">3x - Rollover Free play $10</p>
+							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
 								  </div>
 								</div>
@@ -51,48 +91,56 @@ export default class BonusesReferral extends React.Component {
 								    <div className="content">
 								    	<h3>Términos y condiciones</h3>
 							    		<p>
-											El número de cuenta de referencia debe ser proporcionado al momento de la inscripción.
-											Se requerirá una identificación válida.
-											Las cuentas referidas deben ser cuentas nuevas, las cuentas duplicadas o existentes no califican.
+											El nombre de usuario quien refiere debe ser proporcionado al momento de la inscripción. Las cuentas referidas deben ser cuentas nuevas, las cuentas duplicadas o existentes no califican.
 										</p>
 
 										<p>
-											Solo se permite una cuenta válida por hogar y dirección IP.
-											Nuestra Administración tiene el derecho de denegar cualquier Bonificación de referencia en los casos que lo consideren necesario.
+											El usuario que refiere debe tener su cuenta activa con un mínimo de 3 meses.
 										</p>
 
 										<p>	
-											Las cuentas referidas deben hacer un depósito inicial de al menos $ 50
-											La bonificación por recomendación requiere una reinversión mínima de 5 veces de las ganancias de la jugada gratis antes de que se pueda procesar cualquier retiro; de lo contrario, el cliente perderá los bonos y ganancias provenientes de esta promoción.
-											Promoción válida para América del Norte, América del Sur, América Central o previa aprobación.
+											Se deben obtener los bonos al momento de hacer el depósito y antes de ingresar la apuesta. Cualquier excepción aplica únicamente bajo la discreción y aprobación de la Administración.
 										</p>
 
 										<p>
-											La cuenta de referencia debe contactarnos 5 días después de que la cuenta referida haya realizado el depósito inicial.
+											Esta promoción aplica únicamente para jugadores recreativos. 
 										</p>
 
 										<p>
-											La cuenta de referencia debe estar activa al menos 2 semanas antes del nuevo registro.
-											La cuenta de referencia no debe tener pagos en los últimos 30 días.
-											Se aplica solo al 10% de las líneas con juice (comisión/ganancia)
+											Es válida una única promoción por depósito.
 										</p>
 
 										<p>
-											El bono de recomendación máximo otorgado es de $ 250
-											La acción de Casino y Carreras de caballos no cuentan para la renovación.
+											Válida únicamente para los residentes de América o en lugares en donde sean autorizados por la Administración.
 										</p>
 
 										<p>
-											* Se pueden aplicar restricciones adicionales para esta promoción. *
-											Los créditos promocionales no utilizados caducarán y serán revocados después de un período de 90 días.
+											La promoción puede ser combinada con otras promociones a discreción de la administración.
 										</p>
 
 										<p>
-											Los retiros recientes deben reponerse antes de la elegibilidad de bonificación.
-											La administración se reserva el derecho de anular o revocar las bonificaciones a su discreción.
-											Cualquier bonificación aplicable debe reclamarse al momento del depósito y antes de hacer uso del dinero depositado. Si no se reclama el bono en este momento, se perderá.
-											Por favor, revise los términos y condiciones.
-											Para obtener más información, póngase en contacto con nuestras ventas
+											El re-uso (rollover) se basa en los depósitos + Tarifas de transferencia si las hay + Las ganancias de las jugadas gratis.
+										</p>
+										<p>
+											Esta promoción tiene una retención de dos semanas.
+										</p>
+										<p>
+											En el Casino y las Carreras de Caballos no contarán para el re-uso de las jugadas. 
+										</p>
+										<p>
+											Los créditos promocionales no utilizados caducarán después de un periodo de 90 días. 
+										</p>
+										<p>
+											Los retiros recientes deben reponerse antes de ser elegible para una bonificación. 
+										</p>
+										<p>
+											La administración se reserva el derecho de anular o revocar las bonificaciones a su discreción. 
+										</p>
+										<p>
+											El bonus máximo otorgado es de $1000.
+										</p>
+										<p>
+											Los Bonos se dan para incentivar a los jugadores y aumentar sus oportunidades de ganar. El aceptar un bono es opcional y al hacerlo, el jugador se da por entendido y acoge las condiciones y Reglas Generales de Bono, comprometiéndose así a jugar el monto especificado antes de solicitar un retiro. El usuario tiene la opción no solicitar el bono.
 										</p>
 								    </div>
 								  </div>
@@ -102,7 +150,40 @@ export default class BonusesReferral extends React.Component {
 					</div>
 				</div>
 			</div>
+			<BonusesCta/>
+    	<Modal show={this.state.show} handleClose={this.hideModal} >
+				<div className="columns">
+					<div className="column">
+						<div className="content">
+							<h4 className="text-center">Bitcoins</h4>
+						</div>
+					</div>
+					<div className="column">
+						<div className="content">
+							<h4 className="text-center">Monero</h4>
+						</div>
+					</div>
+				</div>
+      </Modal>
 		</div>
     )
   }
 }
+
+const Modal = ({ handleClose, show, children }) => {
+const showHideClassName = show ? 'modal display-block' : 'modal display-none';
+  return (
+		<div className={showHideClassName}>
+		  <div className="modal-background"></div>
+		  <div className="modal-card">
+		    <header className="modal-card-head">
+		      <p className="modal-card-title text-center">Metodos de pago</p>
+		      <button className="delete" aria-label="close" onClick={handleClose}></button>
+		    </header>
+		    <section className="modal-card-body">
+		      {children}
+		    </section>
+		  </div>
+		</div>
+  );
+};

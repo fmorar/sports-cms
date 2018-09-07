@@ -23,8 +23,6 @@ export default class Register extends React.Component {
     })
   }
 
-
-
   render() {
     return (
 		<div className="sing-up">
@@ -39,80 +37,85 @@ export default class Register extends React.Component {
 									</p>
 							    <form className="login" action="" method="post">
 							      <div className="field">
-							        <label className="label">Nombre</label>
+							        <label className="label">Nombre completo</label>
 							        <div className="control">
-							          <input className="input" type="text" placeholder="Nombre Completo"/>
+							          <input className="input" type="text" required placeholder="Ej: adam sandler"/>
 							        </div>
 							      </div>
 							      <div className="field">
 							        <label className="label">E-mail</label>
 							        <div className="control">
-							          <input className="input" type="email" placeholder="mail"/>
+							          <input className="input" type="email" required placeholder="Ej: name@name.com"/>
 							        </div>
 							      </div>
 							      <div className="field">
-							        <label className="label">Phone</label>
+							        <label className="label">Teléfono</label>
 							        <div className="control">
-							          <input className="input" type="tel" placeholder="phone"/>
+							          <input className="input" type="tel" required placeholder="Ej: 1-866-590-6623"/>
+							        </div>
+							      </div>
+							      <div className="field">
+							        <label className="label">Código de area</label>
+							        <div className="control">
+							          <input className="input" type="text" required placeholder="Ej: +506"/>
 							        </div>
 							      </div>
 							      <div className="field">
 							        <label className="label">Contraseña</label>
 							        <div className="control">
-							          <input className="input" type="password" placeholder="Password"/>
+							          <input className="input" type="password" required placeholder="Contraseña"/>
 							        </div>
 							      </div>
 							      <div className="field">
 							        <label className="label">Confirmar contraseña</label>
 							        <div className="control">
-							          <input className="input" type="password" placeholder="Password"/>
+							          <input className="input" type="password" required placeholder="Confirmar contraseña"/>
 							        </div>
 							      </div>
 							      <div className="field">
 							        <label className="label">Fecha de nacimiento</label>
 							        <div className="control">
-							          <input className="input" type="date"/>
+							          <input className="input" required type="date"/>
 							        </div>
 							      </div>
 
 							      <div className="field">
 							        <label className="label">Dirección</label>
 							        <div className="control">
-							          <input className="input" type="text" placeholder="Dirección"/>
-							        </div>
-							      </div>
-
-							      <div className="field">
-							        <label className="label">Ciudad</label>
-							        <div className="control">
-							          <input className="input" type="text" placeholder="Ciudad"/>
+							          <input className="input" required type="text" placeholder="Ej: Balcarce 50 Piso 2 C1064AAB"/>
 							        </div>
 							      </div>
 
 							      <div className="field">
 							        <label className="label">Zip code</label>
 							        <div className="control">
-							          <input className="input" type="text" placeholder="Zip code"/>
+							          <input className="input" required type="text" placeholder="Ej: 1110"/>
 							        </div>
 							      </div>
 
 							      <div className="field">
-							        <label className="label">País</label>
+						        	<label className="label">País</label>
 											<div className="select is-rounded">
 											  <select>
 						              {
 						                this.state.countries.map((dynamicData,key) =>
 						                	<option key={dynamicData.numericCode}>{dynamicData.name}</option>
-
 						                )
 						              }
 											  </select>
-										  </div>
+									  	</div>
 										</div>
+
+							      <div className="field">
+							        <label className="label">Quien refiere (Opcional)</label>
+							        <div className="control">
+							          <input className="input" type="text" placeholder="Ej: VipSport77"/>
+							        </div>
+							      </div>
 
 
 										<label className="checkbox">
-										  <input className="is-m-right" type="checkbox"/>
+										  <input required className="is-m-right" type="checkbox"/>
 										   Acepto los <Link to="/terms">Terminos y condiciones</Link>
 										</label>
 

@@ -14,9 +14,11 @@ const Bonuses = () => (
         <div className="image image-big column is-6">
           <Link to="/bonuses-crypto"><img src={bonuses01} alt=""/></Link>
           <p className="bonuses-info">
-            Crypto
-            <br/>
-            <span>Bonus</span>
+            <Link to="/bonuses-crypto">
+              Crypto
+              <br/>
+              <span>Bonus</span>
+            </Link>
           </p>
           <Link className="button is-text button__bonuses" to="/bonuses-crypto">Obtener ahora!</Link>
         </div>
@@ -26,9 +28,11 @@ const Bonuses = () => (
               <div className="image image-small column is-6">
                 <Link to="/bonuses-cash"><img src={bonuses02} alt=""/></Link>
                 <p className="bonuses-info">
-                  Bonos
-                  <br/>
-                  <span>en Efectivo</span>
+                  <Link to="/bonuses-cash">
+                    Bonos
+                    <br/>
+                    <span>en Efectivo</span>
+                  </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/bonuses-cash">Obtener ahora!</Link>
               </div>
@@ -36,9 +40,11 @@ const Bonuses = () => (
               <div className="image image-small column is-6">
                 <Link to="/bonuses-reload"><img src={bonuses03} alt=""/></Link>
                 <p className="bonuses-info">
-                  Reload
-                  <br/>
-                  <span>Bonus</span>
+                  <Link to="/bonuses-reload">
+                    Reload
+                    <br/>
+                    <span>Bonus</span>
+                  </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/bonuses-reload">Obtener ahora!</Link>
               </div>
@@ -48,18 +54,22 @@ const Bonuses = () => (
               <div className="image image-small column is-6">
                <Link to="/bonuses-referral"><img src={bonuses04} alt=""/></Link>
                 <p className="bonuses-info">
-                  Bonos
-                  <br/>
-                  <span>de referidos</span>
+                  <Link to="/bonuses-referral">
+                    Bonos
+                    <br/>
+                    <span>de referidos</span>
+                  </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/bonuses-referral">Obtener ahora!</Link>
               </div>
               <div className="image image-small column is-6">
                <Link to="/register"><img src={bonuses05} alt=""/></Link>
                 <p className="bonuses-info">
-                  Registrate
-                  <br/>
-                  <span>Ahora para obtner un bonus</span>
+                  <Link to="/register">
+                    Registrate
+                    <br/>
+                    <span>Ahora para obtner un bonus</span>
+                  </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/register">Registrate!</Link>
               </div>
