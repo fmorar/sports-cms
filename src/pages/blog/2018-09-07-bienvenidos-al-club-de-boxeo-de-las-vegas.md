@@ -17,6 +17,8 @@ tags:
 
 "Hablaré con Dana, puedo hablar con Conor para conseguir algunas entradas", dijo Mayweather. "Pero antes de la pelea, cuando McGregor llegue a Las Vegas, nos gustaría que él entrene en - sé que el UFC tiene un centro de entrenamiento - pero nos gustaría que él haga ejercicio en el Mayweather Boxing Club. " 
 
+![retrato del profesional de artes marciales mixtas conor mcgregor](/img/conor.jpg)
+
 Este fin de semana fue el primer aniversario de la exitosa pelea que permitió a Mayweather mejorar su récord de boxeo a 50-0 con un nocaut técnico en el décimo asalto de McGregor en una de las peleas más publicitadas y lucrativas en la historia de los deportes de combate.
 
 Aunque ambos se habían calentado las palabras antes del evento, han restado importancia a la rivalidad desde que se rieron juntos al banco. Mayweather no está seguro de cómo le irá a McGregor contra Nurmagomedov, quien es MMA y actualmente campeón reinante del peso ligero del UFC, pero alabó el espíritu de lucha de McGregor.
