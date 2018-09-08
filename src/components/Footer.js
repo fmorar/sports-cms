@@ -63,13 +63,13 @@ const Footer = () => (
           <h4>Siguenos</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
-              <Link to="/">Facebook</Link>
+              <a href="https://www.facebook.com/VIP-Sportsbook-324249738142521/" target="_blank">Facebook</a>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Twitter</Link>
+              <a href="https://twitter.com/sportsbook_vip" target="_blank">Twitter</a>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/">Google plus</Link>
+              <a href="https://plus.google.com/100592726028631080773" target="_blank">Google plus</a>
             </li>
           </ul>
         </div>

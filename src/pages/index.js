@@ -4,6 +4,7 @@ import Carousel from 'nuka-carousel'
 import Steps from '../components/Steps'
 import SingupHome from '../components/SingupHome'
 import CrytpCta from '../components/CrytpCta'
+import Freeplay from '../components/Freeplay'
 import Bonuses from '../components/Bonuses'
 import ContactForm from '../components/ContactForm'
 import slide1 from '../img/slide1.jpg'
@@ -87,6 +88,9 @@ export default class IndexPage extends React.Component {
               }
             </div>
           </div>
+        </div>
+        <div className="section">
+          <Freeplay/>
         </div>
         <div className="crypto section">
           <CrytpCta/>
