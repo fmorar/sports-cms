@@ -7,8 +7,8 @@ export default class SportsRules extends React.Component {
   render() {
     return (
 		<div className="sports-rules-page"> 
-			<div className="sports-rules--hero">
-				<h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Reglas deportivas</h2>
+			<div className="section-title sports-rules--hero">
+				<h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Reglas deportivas</h2>
 			</div>
 			<div className="section">
 				<div className="container">

@@ -27,8 +27,8 @@ class TagRoute extends React.Component {
     return (
       <div>
         <div className="tags">
-          <div className="tags--hero">
-            <h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Tags</h2>
+          <div className="section-title tags--hero">
+            <h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Tags</h2>
           </div>
           <div className="section">
             <div className="container">

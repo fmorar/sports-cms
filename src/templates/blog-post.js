@@ -29,8 +29,8 @@ export const BlogPostTemplate = ({
   return (
     <div className="blog-post">
       {helmet || ''}
-      <div style={bgDynamic} className="blog-post--hero">
-        <h2 className="section-title section-title__blog-post title title__main is-size-3 has-text-weight-bold is-bold-light text-center">
+      <div style={bgDynamic} className="blog-post--hero section-title">
+        <h2 className="section-title__blog-post title title__main is-size-3 has-text-weight-bold is-bold-light text-center">
           {title}
         </h2>
       </div>

@@ -10,8 +10,8 @@ export default class Blog extends React.Component {
 
     return (
       <div className="blog">
-        <div className="blog--hero">
-          <h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Blog</h2>
+        <div className="blog--hero section-title">
+          <h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Blog</h2>
         </div>
         <div className="section">
           <div className="container latest-blog">
@@ -39,7 +39,7 @@ export default class Blog extends React.Component {
                           <div className="info-wrapper columns">
                             <small className="column">{post.frontmatter.date}</small>
                             <Link className="button is-text column" to={post.fields.slug}>
-                              Keep Reading
+                              Ver más!
                             </Link>
                           </div>
                         </div>

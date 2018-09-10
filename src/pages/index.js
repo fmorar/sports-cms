@@ -45,7 +45,8 @@ export default class IndexPage extends React.Component {
       <section>
         <div className="hero">
           <SingupHome/>
-          <Carousel
+          <Carousel 
+            className="is-hidden-mobile"
             slidesToShow={1}
             autoplay={true}
             slideIndex={this.state.slideIndex}

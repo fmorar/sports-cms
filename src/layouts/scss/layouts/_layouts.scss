@@ -30,7 +30,6 @@
 
 .title__main {
 	color: white;
-    margin-bottom: 50px;
     text-transform: uppercase;
 }
 
@@ -59,11 +58,9 @@
 }
 
 .section-title {
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {

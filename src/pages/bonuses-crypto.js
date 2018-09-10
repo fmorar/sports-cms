@@ -17,8 +17,8 @@ export default class BonusesCrypto extends React.Component {
   render() {
     return (
 		<div className="bonuses-page">
-			<div className="bonuses--hero">
-				<h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Bonus Crypto</h2>
+			<div className="bonuses--hero section-title">
+				<h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Bonus Crypto</h2>
 			</div>
 			<div className="section">
 				<div className="container">

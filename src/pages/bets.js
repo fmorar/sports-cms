@@ -10,8 +10,8 @@ export default class Bets extends React.Component {
   render() {
     return (
 			<div className="bets-page"> 
-				<div className="bets--hero">
-					<h2 className="section-title title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Pronósticos</h2>
+				<div className="section-title bets--hero">
+					<h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Pronósticos</h2>
 				</div>
 				<div className="section">
 					<div className="container">

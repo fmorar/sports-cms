@@ -10,7 +10,7 @@ const CrytpCta = () => (
         para jugar
       </h2>
       <div className="column column__flex">
-        <Link className="button is-outlined is-rounded button__center" to="#">Aprende más!</Link>
+        <Link className="button is-rounded button__center" to="/bet-cryptocurrency">Aprende más!</Link>
       </div>
     </div>
   </div>
