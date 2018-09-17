@@ -1,5 +1,9 @@
 .current-games {
     margin-right: 20px;
+
+    @include until(770px) {
+    	margin: 0 0 $space-out-medium 0;
+  	}
 }
 
 .current-games__time {
@@ -22,7 +26,7 @@
 	h4, .broadcast {
     	color: #fff;
 	}
-	
+
 	h4 {
 		font-size: 1.2rem;
 	    font-weight: 900;

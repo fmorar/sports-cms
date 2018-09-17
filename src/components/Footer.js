@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 const Footer = () => (
   <footer>
     <div className="container">
-      <div className="sitemap columns is-desktop">
-        <div className="sitemap__block column">
+      <div className="sitemap">    
+        <div className="sitemap__block">
           <h4>Information</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
@@ -25,7 +25,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="sitemap__block column">
+        <div className="sitemap__block">
           <h4>Pronósticos</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
@@ -42,7 +42,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="sitemap__block column">
+        <div className="sitemap__block">
           <h4>Ayuda</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
@@ -59,7 +59,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="sitemap__block column">
+        <div className="sitemap__block">
           <h4>Siguenos</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">

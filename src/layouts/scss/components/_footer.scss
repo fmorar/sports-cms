@@ -4,11 +4,26 @@ footer {
 
 .sitemap {
 	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	padding: 20px 0;
-	margin: 0 auto;
 }
 
 .sitemap__block {
+	justify-content: space-between;
+	width: 25%;
+
+	@include until(815px) {
+		width: 50%;
+		padding: 0 $space-base;
+		margin-bottom: $space-out-small;
+  	}
+
+	@include until(440px) {
+		width: 100%;
+  	}
+
 	h4 {
 		font-size: 1.5rem;
 		margin-bottom: 10px;
