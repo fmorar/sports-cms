@@ -36,7 +36,7 @@ const Navbar = () => (
             </Link>
           </div>
         </div>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/lines">
          Lineas
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
