@@ -71,7 +71,7 @@ export default class Cryptocurrency extends React.Component {
 									</ul>
 								</div>
 							</div>
-							<div className="column gif">
+							<div className="column gif is-hidden-mobile">
 							</div>
 						</div>
 					</div>

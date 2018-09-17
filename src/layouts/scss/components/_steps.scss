@@ -9,9 +9,22 @@
     bottom: 0;
     box-shadow: $shadow-soft;
     display: flex;
-    left: calc(0% - -300px);
+	margin: 0 15%;
 	padding: 2%;
 	position: absolute;
+    width: 70%;
+
+	@include until($desktop) {
+		border-radius: 0;
+    	position: initial;
+   		margin: 0;
+    	width: 100%;
+
+    	.center-content {
+		    width: 100%;
+    		padding-top: 5%;
+    	}
+	}
 
 
 	.steps__title {
@@ -37,4 +50,10 @@
 	p {	
 		font-size: 14px;
 	}
+}
+
+.display-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
