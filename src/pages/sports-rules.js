@@ -17,6 +17,8 @@ export default class SportsRules extends React.Component {
 						<aside className="menu">
 						  <p className="menu-label">
 						    Reglas por deporte
+						    <br/>
+						    -Menú-
 						  </p>
 						  <ul className="menu-list">
 						    <li>
