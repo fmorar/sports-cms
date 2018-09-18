@@ -13,6 +13,12 @@
     }
 }
 
+.card__bet__img {
+    @include until(950px) {
+        display: none;
+    }
+}
+
 .img-sidebar {
 	background: url("../../img/pronosticos.jpg");
     width: 100%;
