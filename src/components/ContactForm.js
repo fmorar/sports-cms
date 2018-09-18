@@ -42,7 +42,7 @@ const ContactForm = () => (
           </div>
         </form>
       </div>
-      <div className="column">
+      <div className="column is-hidden-mobile">
         <img src={add2} alt=""/>
       </div>
     </div>

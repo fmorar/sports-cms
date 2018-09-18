@@ -6,7 +6,7 @@ const Navbar = () => (
     <div className="navbar-brand">
       <Link to="/">
         <figure className="image">
-          <img src={logo} alt="Vipsportbook"/>
+          <img src={logo} alt="Vipsportbook" width="300" height="61"/>
         </figure>
       </Link>
       <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
