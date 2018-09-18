@@ -30,7 +30,7 @@ export default class Register extends React.Component {
 				<div className="container">
 					<div className="card">
 					  <div className="columns is-marginless is-paddingless	">
-							<div className="column is-8 is-paddingless is-m-top">
+							<div className="column is-8 is-paddingless is-m-top login_form">
 								<div className="card-content card-content__login">
 									<p className="title">
 										Registarse
@@ -130,7 +130,7 @@ export default class Register extends React.Component {
 									<p className="content has-text-centered">Ya tienes una cuenta? <Link to="sing-up">Inicia sesión</Link></p>
 							  </div>
 							</div>
-							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only">
+							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only login_img">
 								<img className="is-inherit" src={RegisterImg} alt=""/>
 							</div>
 					  </div>

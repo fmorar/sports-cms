@@ -5,3 +5,15 @@
 .card-content__login {
 	padding: 10%;
 }
+
+.login_img {
+	@include until(1408px) {
+		display: none;
+	}
+}
+
+.login_form {
+	@include until(1408px) {
+		width: 100% !important;
+	}
+}
