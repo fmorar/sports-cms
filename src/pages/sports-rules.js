@@ -76,7 +76,7 @@ export default class SportsRules extends React.Component {
 					</div>
 					<div className="column">
 						<div className="content">
-							<div class="content">
+							<div className="content">
 								<div id="baseball">
 								  <h2>Baseball</h2>
 								  <p>
