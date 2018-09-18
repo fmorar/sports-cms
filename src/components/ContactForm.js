@@ -13,19 +13,19 @@ const ContactForm = () => (
           <div className="field">
             <label className="label label--contact">Nombre</label>
             <div className="control">
-              <input className="input" type="text" placeholder="Nombre completo"/>
+              <input className="input" type="text" placeholder="Ej: Adam sandler"/>
             </div>
           </div>
           <div className="field">
             <label className="label label--contact">Teléfono</label>
             <div className="control">
-              <input className="input" type="text" placeholder="Teléfono"/>
+              <input className="input" type="text" placeholder="Ej: 1-866-590-6623"/>
             </div>
           </div>
           <div className="field">
             <label className="label label--contact">E-mail</label>
             <div className="control">
-              <input className="input" type="text" placeholder="E-mail"/>
+              <input className="input" type="text" placeholder="Ej: name@name.com"/>
             </div>
           </div>
           <div className="field">
