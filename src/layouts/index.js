@@ -12,8 +12,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet 
       title="Vipsportbook | beats | casinos | sports and more"
       meta={[
-          { name: 'description', content: '...' },
-          { name: 'keywords', content: '....' },
+          { name: 'description', content: 'Nuestro proyecto VIP Sportsbook, fue creado pensando en brindar beneficios a los jugadores y afiliados, mediante una plataforma diseñada para los amantes de los deportes y por supuesto los pronósticos deportivos.' },
+          { name: 'keywords', content: 'gambling online, vip sportbook, pronósticos deportivos, Apuestas deportivas, Bonus de bienvenida, Bonos de bienvenida' },
       ]} 
       link={[
         { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }

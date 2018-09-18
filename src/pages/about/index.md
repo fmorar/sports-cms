@@ -10,4 +10,4 @@ description: >-
   día nuestra calidad para ofrecer servicios de alto rendimiento para el
   beneficio, comodidad y diversión de nuestros usuarios.
 ---
- Nuestro proyecto  VIP Sportsbook, fue creado pensando en brindar beneficios a los jugadores y afiliados, mediante una plataforma diseñada para los amantes de los deportes y por supuesto las apuestas deportivas. El principal objetivo de este sitio es ofrecer todas las facilidades necesarias para disfrutar de apuestas deportivas y además ofrecer a los usuarios diferentes tipos de promociones.
+ Nuestro proyecto  VIP Sportsbook, fue creado pensando en brindar beneficios a los jugadores y afiliados, mediante una plataforma diseñada para los amantes de los deportes y por supuesto los pronósticos deportivas. El principal objetivo de este sitio es ofrecer todas las facilidades necesarias para disfrutar de apuestas deportivas y además ofrecer a los usuarios diferentes tipos de promociones.
