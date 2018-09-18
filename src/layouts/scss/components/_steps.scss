@@ -14,18 +14,19 @@
 	position: absolute;
     width: 70%;
 
-	@include until($desktop) {
+	@include until(1700px) {
 		border-radius: 0;
-    	position: initial;
+		box-shadow: 0 0 0 0;
    		margin: 0;
+   		margin-top: 100px;
+   		padding: $space-small;
+    	position: initial;
     	width: 100%;
 
     	.center-content {
 		    width: 100%;
-    		padding-top: 5%;
     	}
 	}
-
 
 	.steps__title {
 		border-left: 5px solid $secondary;
@@ -34,6 +35,10 @@
 		font-weight: 900;
 		line-height: 1;
 		padding-left: 10px;
+		
+		@include until(425px) {
+			border-right: 5px solid $secondary;
+		}
 	}
 }
 

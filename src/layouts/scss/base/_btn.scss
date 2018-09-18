@@ -30,8 +30,10 @@
 
 .button--singup {
 	color: white;
-	background: $secondary;
+	background: $contrast;
+
 	&:hover {
+		background: $secondary;
 		color: white;
 	}
 }
