@@ -17,3 +17,15 @@
 		width: 100% !important;
 	}
 }
+
+.sing-up__img {
+	@include until(1408px) {
+		display: none;
+	}
+}
+
+.sing-up__form {
+	@include until(1408px) {
+		width: 100% !important;
+	}
+}

@@ -10,7 +10,7 @@ export default class SingUp extends React.Component {
 				<div className="container">
 					<div className="card">
 					  <div className="columns is-marginless is-paddingless	">
-							<div className="column is-8 is-paddingless is-m-top">
+							<div className="column is-8 is-paddingless is-m-top sing-up__form">
 								<div className="card-content card-content__login">
 									<p className="title">
 										Iniciar sesión
@@ -44,7 +44,7 @@ export default class SingUp extends React.Component {
 									<p className="content has-text-centered">No tienes una cuenta? <Link to="register">Registrate</Link></p>
 							  </div>
 							</div>
-							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only">
+							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only sing-up__img">
 								<img className="is-inherit" src={SingUP} alt=""/>
 							</div>
 					  </div>
