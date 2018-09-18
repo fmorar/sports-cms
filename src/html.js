@@ -53,7 +53,12 @@ module.exports = class HTML extends React.Component {
                     s1.setAttribute('crossorigin','*');
                     s0.parentNode.insertBefore(s1,s0);
                     })();
-
+                `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
                     !function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
