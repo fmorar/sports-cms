@@ -15,20 +15,18 @@ export const AboutPageTemplate = ({ title, content, description, image, contentC
             {title}
           </h2>
         </div>
-        <div className="about-us--container">
-          <div className="columns">
-            <div className="column">
-              <img alt="" src={image} />
-            </div>
-            <div className="column">
-              <p className="p-40">
-                {description}
-              </p>
-            </div>
+      </div>
+      <div className="about-us--container">
+        <div className="columns">
+          <div className="column about-us--container__img">
+          </div>
+          <div className="column about-us--container__p">
+            <p className="p-40">
+              {description}
+            </p>
           </div>
         </div>
       </div>
-      <div className="hidden-height hidden-height__2x"></div>
       <div className="section about-content">
         <div className="container">
           <PageContent className="content" content={content} />
