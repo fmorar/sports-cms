@@ -116,7 +116,7 @@ export default class Register extends React.Component {
 
 										<label className="checkbox">
 										  <input required className="is-m-right" type="checkbox"/>
-										   Acepto los <Link to="/terms">Terminos y condiciones</Link>
+										   Acepto los <Link to="/house-rules">Terminos y condiciones</Link>
 										</label>
 
 										<div className="field is-grouped">
