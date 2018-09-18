@@ -29,9 +29,9 @@ const Bonuses = () => (
                 <Link to="/bonuses-cash"><img src={bonuses02} alt=""/></Link>
                 <p className="bonuses-info">
                   <Link to="/bonuses-cash">
-                    Bonos
+                    Cash
                     <br/>
-                    <span>en Efectivo</span>
+                    <span>Bonus</span>
                   </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/bonuses-cash">Obtener ahora!</Link>
@@ -55,9 +55,9 @@ const Bonuses = () => (
                <Link to="/bonuses-referral"><img src={bonuses04} alt=""/></Link>
                 <p className="bonuses-info">
                   <Link to="/bonuses-referral">
-                    Bonos
+                    Referal
                     <br/>
-                    <span>de referidos</span>
+                    <span>Bonus</span>
                   </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/bonuses-referral">Obtener ahora!</Link>
@@ -67,8 +67,6 @@ const Bonuses = () => (
                 <p className="bonuses-info">
                   <Link to="/register">
                     Registrate
-                    <br/>
-                    <span>Ahora para obtner un bonus</span>
                   </Link>
                 </p>
                 <Link className="button is-text button__bonuses" to="/register">Registrate!</Link>
