@@ -23,7 +23,7 @@ export default class Bets extends React.Component {
 									  <div className="card-content">
 									    <div className="content">
 										    <div className="columns">
-													<div className="column is-3">
+													<div className="column is-3 card__bet__img card__bet__img">
 														<img className="image" src={racebook} alt=""/>
 													</div>
 													<div className="column">
@@ -43,7 +43,7 @@ export default class Bets extends React.Component {
 									  <div className="card-content">
 									    <div className="content">
 										    <div className="columns">
-													<div className="column is-3">
+													<div className="column is-3 card__bet__img">
 														<img className="image" src={casinoOnline} alt=""/>
 													</div>
 													<div className="column">
@@ -63,7 +63,7 @@ export default class Bets extends React.Component {
 									  <div className="card-content">
 									    <div className="content">
 										    <div className="columns">
-													<div className="column is-3">
+													<div className="column is-3 card__bet__img">
 														<img className="image" src={casinoVivo} alt=""/>
 													</div>
 													<div className="column">
@@ -83,7 +83,7 @@ export default class Bets extends React.Component {
 									  <div className="card-content">
 									    <div className="content">
 										    <div className="columns">
-													<div className="column is-3">
+													<div className="column is-3 card__bet__img">
 														<img className="image" src={pronosticosVivo} alt=""/>
 													</div>
 													<div className="column">
