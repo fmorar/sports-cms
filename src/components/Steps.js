@@ -17,15 +17,15 @@ const Steps = () => (
         <div className="steps__img columns">
           <div className="steps__img-container column text-center">
             <img src={icoCoinUser} alt="icon user coin"/>
-            <p>Registrarse es sencillo <br/> y facil</p>
+            <p>Registrate, es sencillo <br/> y facil</p>
           </div>
           <div className="steps__img-container column text-center">
             <img src={icoCoinMoney} alt="icon user money"/>
-            <p>Cree su cuenta <br/> instataneamente</p>
+            <p>Haz el primer <br/> depósito</p>
           </div>
           <div className="steps__img-container column text-center">
             <img src={icoCoinOPlay} alt="icon user play"/>
-            <p>Comience a <br/> juegar</p>
+            <p>Comienza a <br/> juegar</p>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ const Bonuses = () => (
                <Link to="/bonuses-referral"><img src={bonuses04} alt=""/></Link>
                 <p className="bonuses-info">
                   <Link to="/bonuses-referral">
-                    Referal
+                    Referral
                     <br/>
                     <span>Bonus</span>
                   </Link>

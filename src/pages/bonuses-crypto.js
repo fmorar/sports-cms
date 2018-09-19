@@ -70,22 +70,6 @@ export default class BonusesCrypto extends React.Component {
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 								  			<p className="column is-marginless">$50.00 - $1000.00</p>
 								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-								  			<p className="column is-marginless">9x - Rollover</p>
-												<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
-									    </div>
-								    </div>
-								  </div>
-								</div>
-							</div>
-							<div className="column is-12">
-								<div className="card">
-								  <div className="card-content">
-								    <div className="content">
-									    <div className="columns">
-								  			<p className="column is-marginless">50% de bonus</p>
-								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-								  			<p className="column is-marginless">$50.00 - $1000.00</p>
-								  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 								  			<p className="column is-marginless">6x - Rollover</p>
 												<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 									    </div>

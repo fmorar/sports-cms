@@ -37,7 +37,7 @@ export default class BonusesReferral extends React.Component {
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 							  			<p className="column is-marginless">$300.00 - $500.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">12x - Rollover Free play $100</p>
+							  			<p className="column is-marginless">12x - Rollover - Free play $100</p>
 							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
 								  </div>
@@ -51,7 +51,7 @@ export default class BonusesReferral extends React.Component {
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 							  			<p className="column is-marginless">$200.00 - $300.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">9x - Rollover Free play $50</p>
+							  			<p className="column is-marginless">9x - Rollover - Free play $50</p>
 							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
 								  </div>
@@ -65,7 +65,7 @@ export default class BonusesReferral extends React.Component {
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 							  			<p className="column is-marginless">$100.00 - $200.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">6x - Rollover Free play $20</p>
+							  			<p className="column is-marginless">6x - Rollover - Free play $20</p>
 							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
 								  </div>
@@ -79,7 +79,7 @@ export default class BonusesReferral extends React.Component {
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
 							  			<p className="column is-marginless">$50.00 - $100.00</p>
 							  			<p className="column is-marginless is-1 is-hidden-mobile">|</p>
-							  			<p className="column is-marginless">3x - Rollover Free play $10</p>
+							  			<p className="column is-marginless">3x - Rollover - Free play $10</p>
 							        	<button type='button' className="button is-rounded mt-5" onClick={this.showModal}>Obtener</button>
 								    </div>
 								  </div>
@@ -98,7 +98,11 @@ export default class BonusesReferral extends React.Component {
 											El usuario que refiere debe tener su cuenta activa con un mínimo de 3 meses.
 										</p>
 
-										<p>	
+										<p>
+											El Rollover aplica para el nuevo jugador y el Free play lo gana quien lo refirió.
+										</p>
+
+										<p>
 											Se deben obtener los bonos al momento de hacer el depósito y antes de ingresar la apuesta. Cualquier excepción aplica únicamente bajo la discreción y aprobación de la Administración.
 										</p>
 

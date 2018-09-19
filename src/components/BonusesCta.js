@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const BonusesCta = () => (
   <div className="bonuses-cta">
-    <div className="container">
+{/*    <div className="container">
       <div className="columns">
       <div className="column is-9">
         <h2 className= "bonuses__title">
@@ -16,7 +16,7 @@ const BonusesCta = () => (
           <Link className="button is-rounded button__center" to="#">Obtener ahora</Link>
         </div>
       </div>
-    </div>
+    </div>*/}
   </div>
 )
 export default BonusesCta
