@@ -37,11 +37,11 @@ const Navbar = () => (
           </div>
         </div>
         <Link className="navbar-item" to="/lines">
-         Lineas
+         Juegos
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
           <span className="navbar-link">
-            Sportbook
+            Sportsbook
           </span>
           <div className="navbar-dropdown is-boxed">
             <Link className="navbar-item navbar-item__responsive" to="/info">

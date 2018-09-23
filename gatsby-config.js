@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vipsportbook | beats | casinos | sports and more',
+    title: 'Vipsportbook | pronosticos | casinos | sports and more',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
