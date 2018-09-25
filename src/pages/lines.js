@@ -13,7 +13,7 @@ componentDidMount() {
     let event;
     let time;
 
-    var url = "http://anyorigin.com/go?url=" + encodeURIComponent("https://www.betcris.com/en/livebet");
+    var url = "https://allorigins.me/get?url=" + encodeURIComponent("https://www.betcris.com/en/livebet");
 	const myInit = {
 		method: 'HEAD',
 		mode: 'no-cors',
