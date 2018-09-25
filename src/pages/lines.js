@@ -11,7 +11,8 @@ componentDidMount() {
     let liga;
     let event;
     let time;
-    axios.get('https://www.betcris.com/en/livebet')
+    axios.get('https://www.betcris.com/en/livebet',{ headers: {'Access-Control-Allow-Origin': '*'} })
+
       .then((response) => {
         if(response.status === 200) {
           let html = response.data;
