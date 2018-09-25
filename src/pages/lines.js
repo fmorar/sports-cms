@@ -25,7 +25,8 @@ componentDidMount() {
           let html = response.data;
           let countInsert = 0;
           let countByDate = 0;
-          let result = html.match(/<td>(.*?)<\/td>|<td colspan="4">(.*?)<\/td>/g).map(function(val, index){
+          console.log(html.contents);
+          let result = html.contents.match(/<td>(.*?)<\/td>|<td colspan="4">(.*?)<\/td>/g).map(function(val, index){
             let filterData = val.replace(/<\/?td>|<\/?td colspan="4">/g,'');           
               if (filterData.match(/2018|2019|2020/g)) {
                 countByDate = 0;
