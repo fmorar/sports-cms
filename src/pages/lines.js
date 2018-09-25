@@ -6,19 +6,20 @@ import BonusesCta from '../components/BonusesCta'
 
 export default class Lines extends React.Component {
 componentDidMount() {
+
     let sportData = [[]];
     let date;
     let liga;
     let event;
     let time;
 
-	const testURL = 'https://www.betcris.com/en/livebet';
+    var url = "http://anyorigin.com/go?url=" + encodeURIComponent("https://www.betcris.com/en/livebet");
 	const myInit = {
 		method: 'HEAD',
 		mode: 'no-cors',
 	};
-    axios.get(testURL, myInit)
 
+    axios.get(url, myInit)
       .then((response) => {
         if(response.status === 200) {
           let html = response.data;
