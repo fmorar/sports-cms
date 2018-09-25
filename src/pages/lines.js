@@ -11,7 +11,13 @@ componentDidMount() {
     let liga;
     let event;
     let time;
-    axios.get('https://www.betcris.com/en/livebet',{ headers: {'Access-Control-Allow-Origin': '*'} })
+
+	const testURL = 'https://www.betcris.com/en/livebet';
+	const myInit = {
+		method: 'HEAD',
+		mode: 'no-cors',
+	};
+    axios.get(testURL, myInit)
 
       .then((response) => {
         if(response.status === 200) {
