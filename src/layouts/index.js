@@ -10,7 +10,7 @@ import './scss/main.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet 
-      title="Vipsportbook | beats | casinos | sports and more"
+      title="Vipsportbook | pronósticos | casinos | deportes"
       meta={[
           { name: 'description', content: 'Nuestro proyecto VIP Sportsbook, fue creado pensando en brindar beneficios a los jugadores y afiliados, mediante una plataforma diseñada para los amantes de los deportes y por supuesto los pronósticos deportivos.' },
           { name: 'keywords', content: 'gambling online, vip sportbook, pronósticos deportivos, Apuestas deportivas, Bonus de bienvenida, Bonos de bienvenida' },
