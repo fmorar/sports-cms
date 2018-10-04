@@ -40,7 +40,7 @@ componentDidMount() {
                 event = filterData.toLowerCase();
                 countInsert++;
               }
-              if (filterData.match(/ AM | PM | a. m. | p. m./g)) {
+              if (filterData.match(/ AM | PM | a. m.| p. m./g)) {
                 time = filterData;
                 countInsert++;
               }
