@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import RegisterImg from '../img/register.png'
+import RegisterImg from '../img/register.jpg'
 
 export default class Register extends React.Component {
 
