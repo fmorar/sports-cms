@@ -69,9 +69,9 @@ module.exports = class HTML extends React.Component {
                     'https://connect.facebook.net/en_US/fbevents.js');
                     fbq('init', '231272243942220');
                     fbq('track', 'PageView');
-                  <noscript><img height="1" width="1" style="display:none"
-                    src="https://www.facebook.com/tr?id=231272243942220&ev=PageView&noscript=1"
-                  /></noscript>
+                  <noscript>
+                    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=231272243942220&ev=PageView&noscript=1"/>
+                  </noscript>
                   fbq('track', 'Lead');
                   fbq('track', 'ViewContent', {
                     value: 1,
