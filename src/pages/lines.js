@@ -1,23 +1,35 @@
 import React from 'react'
 import axios from 'axios';
+import { css } from 'react-emotion';
+
+import { SyncLoader } from 'react-spinners';
 import Link from 'gatsby-link'
 import BonusesCta from '../components/BonusesCta'
 
-
+const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+`;
 export default class Lines extends React.Component {
-componentDidMount() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
+    }
+  }
 
+  componentDidMount() {
     let sportData = [[]];
     let date;
     let liga;
     let event;
     let time;
-
     var url = "https://allorigins.me/get?url=" + encodeURIComponent("https://www.betcris.com/apuestas-en-vivo");
-	const myInit = {
-		method: 'HEAD',
-		mode: 'no-cors',
-	};
+    	const myInit = {
+    		method: 'HEAD',
+    		mode: 'no-cors',
+    	};
 
     axios.get(url, myInit)
       .then((response) => {
@@ -85,6 +97,7 @@ componentDidMount() {
             table.appendChild(tbody);             
             return table;
           }
+          document.getElementById("loader").setAttribute("style", "display: none;");
           document.getElementById("table").appendChild(buildTable(sportData));
         }
       }, (error) => {
@@ -99,6 +112,15 @@ componentDidMount() {
 				</div>
 				<div className="section">
 					<div className="container">
+            <div id="loader" className='sweet-loading text-center'>
+              <SyncLoader
+                className={override}
+                sizeUnit={"px"}
+                size={20}
+                color={'#f4113f'}
+                loading={this.state.loading}
+              />
+            </div> 
 						<div id="table"></div>
 					</div>
 				</div>
