@@ -44,6 +44,7 @@ export default class SportPredictions extends React.Component {
 								</p>
 								<p>
 									<strong>Ejemplo: Combinada de 3 equipos:</strong>
+									<br/>
 									Las Palmas +600 en estilo americano
 									<br/>
 									olympique lyonnais +300 en estilo americano
@@ -74,44 +75,33 @@ export default class SportPredictions extends React.Component {
 									Un empate en cualquiera de las selecciones convierte toda la jugada en un empate.
 								</p>
 								<h2>Condicionada</h2>
-								<p>En la apuesta condicionada se eligen dos jugadas, en la cual la segunda jugada pasa a ser la apuesta solamente condicionada por un estatuto específico.</p>
+								<p>Una jugada condicionada consiste en dos jugadas directas o combinadas que dependen directamente del resultado de ellas mismas. Es decir, la primera tiene que ganar para que la segunda se dé.</p>
 								<p>
-									<strong>Ejemplos:</strong>
-									Jugada #1, Dallas Cowboys -5 100 para 9
+									<strong>Ejemplos: 2 jugadas directas</strong>
 									<br/>
-									Condición Si gana, empata o se cancela
 									<br/>
-									Jugada #2, Carolina Panthers +4 100 para 91
+									Jugada #1
 									<br/>
-									Si la primera selección pierde, el pronóstico termina. El resultado sería una pérdida de 100.
+									Cleveland Browns -5-110 110 para ganar 100
 									<br/>
-									Si la primera selección gana, el pronóstico continúa con la jugada #2. El resultado parcial sería de una ganancia de 91, quedando a la espera del resultado de la jugada #2.
+									Condicion: En este caso, si la jugada de Cleveland Browns es ganadora, empata, o simplemente se cancela
 									<br/>
-									Si la segunda selección gana, el resultado final de la jugada sería de una ganancia de 182
 									<br/>
-									Si la segunda selección pierde, el resultado final sería una pérdida de 9.
-								</p>
-								<h2>Puntos de Acción</h2>
-								<p>
-									Únicamente están habilitados para el fútbol americano y el baloncesto.
+									Jugada #2
 									<br/>
-								 	Los puntos de acción son un tipo específico de pronósticos para jugadores que; no solamente predicen qué equipo saldrá vencedor en el juego, sino la cantidad de puntos por los que derrotará al otro equipo.
-								 	<br/>
-								 	Estos pronósticos increíblemente exactos con puntos de acción tienen un mínimo de un (1) punto hasta un máximo de diez (10) puntos, y el monto arriesgado no puede ser superior a su saldo disponible.
-								 	<br/>
-								 	En este tipo de pronóstico, se deberá poner en juego $110 para ganar $100.
-								</p>
-								<p>
-									<strong>Ejemplos:</strong>
-									Atlanta Hawks +191
+									San Diego Chargers +3-110 110 para ganar 100.
 									<br/>
-									Houston Rockets -5
+									La condicion en este caso la lidera la jugada #1 donde si esta pierde, la jugada complete terina y el jugador pierde $110.
 									<br/>
-									Suponga que usted juega $100 por punto en los Houston Rockets y pide el tope de 10 puntos. Houston deberá ganar por al menos 5 puntos, y por cada punto adicional anotado por los Houston Rockets después de los 5 indicados en el Handicap podrá ganar $100. Tendrás la oportunidad de ganar entre $ 100 y $ 1000.
 									<br/>
-									Si Houston gana por 9 puntos, su ganancia neta sería de $ 400. Por otro lado, si Houston no logra cubrir el handicap, corre el riesgo de $ 110 por cada punto que no cubra los 5 indicados en la línea del handicap. Los puntos de acción también pueden ser utilizados en los totales, ya sea over o under, así como en el equipo no favorito, consiguiendo 5 puntos.
+									El jugador puede tabien ganar la primera, pero perder la segunda, donde la perdida de la segunda seria de 110, sin afectar las ganancias de la primera. 
 									<br/>
-									Los puntos de acción sólo podrán ser utilizados en las líneas hándicap y los totales.
+									Pueden ganar amabas para un total combinado de $200 en ganacias.
+									<br/>
+									<br/>
+									<strong>Condicionada Reversa</strong>
+									<br/>
+									donde funciona de la sigueinte manera: A se tiene que dar para que B exista, y la version reversa seria que B gana para que A se de. Son dos jugadas condicionadas en una.
 								</p>
 								<h2>Apuestas Abiertas</h2>
 								<p>
