@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="container">
       <div className="sitemap">    
         <div className="sitemap__block">
-          <h4>Information</h4>
+          <h4>Información</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
               <Link to="/about">
@@ -49,10 +49,10 @@ const Footer = () => (
               <Link to="/">Pagos</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/#contact">Contactenos</Link>
+              <Link to="/#contact">Contáctenos</Link>
             </li>
             <li className="sitemap--menu__item">
-              <Link to="/privacy-policy">Politicas de privacidad</Link>
+              <Link to="/privacy-policy">Políticas de privacidad</Link>
             </li>
             <li className="sitemap--menu__item">
               <Link to="/house-rules">Reglas de la casa</Link>
@@ -60,7 +60,7 @@ const Footer = () => (
           </ul>
         </div>
         <div className="sitemap__block">
-          <h4>Siguenos</h4>
+          <h4>Síguenos</h4>
           <ul className="sitemap--menu">
             <li className="sitemap--menu__item">
               <a href="https://www.facebook.com/VIP-Sportsbook-324249738142521/" target="_blank">Facebook</a>

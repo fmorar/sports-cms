@@ -18,18 +18,18 @@ const  SingupHome = () => (
         </div>
       </div>
       <div className="field">
-        <label className="label label--singup">E-mail</label>
+        <label className="label label--singup">Correo electrónico</label>
         <div className="control">
           <input className="input" type="text" placeholder="Ej: name@name.com"/>
         </div>
       </div>
       <div className="field">
         <div className="control">
-          <button className="button button--singup is-large is-fullwidth">Registrate ahora!</button>
+          <button className="button button--singup is-large is-fullwidth">Regístrate ahora!</button>
         </div>
       </div>
       <p className="terms text-center">
-        Al registrarse, acepta nuestra política de privacidad, los términos y condiciones e indica que es mayor de 18 años.
+        Al registrarte, aceptas nuestra política de privacidad, los términos y condiciones indicas que eres mayor y tienes la edad minima para usar este sitio web.
       </p>
     </form>
   </div>

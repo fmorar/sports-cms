@@ -108,7 +108,7 @@ export default class Lines extends React.Component {
     return (
 			<div className="bets-page"> 
 				<div className="section-title bets--hero">
-					<h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Proximos juegos</h2>
+					<h2 className="title title__main is-size-3 has-text-weight-bold is-bold-light text-center">Próximos juegos</h2>
 				</div>
 				<div className="section">
 					<div className="container">

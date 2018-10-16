@@ -5,7 +5,7 @@ import add2 from '../img/contact-img.png'
 const ContactForm = () => (
   <div className="container">
     <div className="content">
-      <h3 className="has-text-weight-bold is-size-2">Contactenos</h3>
+      <h3 className="has-text-weight-bold is-size-2">Contáctenos</h3>
     </div>
     <div className="columns">
       <div className="column">
@@ -23,7 +23,7 @@ const ContactForm = () => (
             </div>
           </div>
           <div className="field">
-            <label className="label label--contact">E-mail</label>
+            <label className="label label--contact">Correo electrónico</label>
             <div className="control">
               <input className="input" type="text" placeholder="Ej: name@name.com"/>
             </div>

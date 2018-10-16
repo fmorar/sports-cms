@@ -10,14 +10,14 @@ const Steps = () => (
       <div className="column display-center">
         <div className="steps__content columns">
           <h2 className="steps__title column">Tres sencillos<br/> pasos</h2>
-          <p className="steps__text column">Unete a nosotros en 3 sencillos pasos y comienza jugar</p>
+          <p className="steps__text column">Únete a nosotros en 3 sencillos pasos y comienza jugar</p>
         </div>
       </div>
       <div className="column display-center">
         <div className="steps__img columns">
           <div className="steps__img-container column text-center">
             <img src={icoCoinUser} alt="icon user coin"/>
-            <p>Registrate, es sencillo <br/> y facil</p>
+            <p>Regístrate, es sencillo <br/> y fácil</p>
           </div>
           <div className="steps__img-container column text-center">
             <img src={icoCoinMoney} alt="icon user money"/>
@@ -25,7 +25,7 @@ const Steps = () => (
           </div>
           <div className="steps__img-container column text-center">
             <img src={icoCoinOPlay} alt="icon user play"/>
-            <p>Comienza a <br/> juegar</p>
+            <p>Comienza a <br/> jugar</p>
           </div>
         </div>
       </div>

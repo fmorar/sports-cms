@@ -22,11 +22,11 @@ const Navbar = () => (
         </Link>
         <div className="navbar-item has-dropdown is-hoverable">
           <span className="navbar-link">
-            Bonus
+            Bonos
           </span>
           <div className="navbar-dropdown is-boxed">
             <Link className="navbar-item navbar-item__responsive" to="/bonuses">
-              Bonus regulares
+              Bonos regulares
             </Link>
             <Link className="navbar-item navbar-item__responsive" to="/bonuses-free-play">
               Free plays

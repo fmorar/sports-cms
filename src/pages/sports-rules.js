@@ -22,7 +22,7 @@ export default class SportsRules extends React.Component {
 						  </p>
 						  <ul className="menu-list">
 						    <li>
-						      <AnchorLink href='#baseball'>Baseball</AnchorLink >
+						      <AnchorLink href='#baseball'>Béisbol</AnchorLink >
 						      <ul>
 						        <li><AnchorLink href="#lanzadores">Selección de Lanzadores</AnchorLink></li>
 						        <li><AnchorLink href="#jugadas-especiales">MLB - Jugadas Especiales (props) / SERIE (torneo de múltiples partidos)</AnchorLink></li>
@@ -30,17 +30,17 @@ export default class SportsRules extends React.Component {
 						      </ul>
 						    </li>
 						    <li>
-						    	<AnchorLink href='#basketball'>Basketball</AnchorLink>
+						    	<AnchorLink href='#basketball'>Baloncesto</AnchorLink>
 									<ul>
 										<li><AnchorLink href="basketball-tiempo">Tiempo de Juego Oficial</AnchorLink></li>
-										<li><AnchorLink href="basketball-internacional">Basketball Internacional</AnchorLink></li>
+										<li><AnchorLink href="basketball-internacional">Baloncesto Internacional</AnchorLink></li>
 									</ul>
 						    </li>
 						    <li>
 						    	<AnchorLink href='#boxeo'>Boxeo</AnchorLink>
 						    </li>
 						    <li>
-						    	<AnchorLink href="#cricket">Cricket</AnchorLink>
+						    	<AnchorLink href="#cricket">Críquet</AnchorLink>
 						    </li>
 						    <li>
 						    	<AnchorLink href="#futbol-americano">Fútbol Americano</AnchorLink>
@@ -80,7 +80,7 @@ export default class SportsRules extends React.Component {
 						<div className="content">
 							<div className="content">
 								<div id="baseball">
-								  <h2>Baseball</h2>
+								  <h2>Béisbol</h2>
 								  <p>
 										Ganadores y perdedores serán oficiales después de 5 entradas (‘innings’) de juego a menos que el equipo de casa esté ganando después de 4 ½ entradas. Si un juego es cancelado o aplazado el marcador de la última entrada completa será el ganador. Si el equipo de casa anota hasta un empate o toma el control en la primera parte de la entrada entonces en el momento en que el juego es llamado a concluir el marcador determinará al ganador. El dinero será devuelto si el equipo de casa empata el juego y luego se suspende el partido. Cuando se está jugando los totales de carreras (arriba/abajo) el juego tiene que llegar a 9 entradas (8 ½ si el equipo de casa está ganando), para que haya acción. Los pronósticos de carreras totales serán cancelados si hay un cambio de lanzador antes de que ambos lanzadores ya listados hayan hecho por lo menos un lanzamiento. Las reglas para los pronósticos de línea de carreras son las mismas que aquellas de totales.
 								  </p>
@@ -136,19 +136,19 @@ export default class SportsRules extends React.Component {
 									</p>
 									<h4>MLB - 2 ½ Líneas de Carreras/ Líneas de Carreras Alternativas y Equipo que tiene el mayor cantidad de anotaciones (home-runs)</h4>
 									<p>
-										Todos los pronósticos se basan en lanzadores listados. El partido debe de durar 8 ½ entradas como mínimo, si el equipo de casa se está ganando, de otro modo el partido tiene que ser concluido en su totalidad. Todo pronóstico se basa en lanzadores listados. El partido tiene que durar 5 entradas completas, como mínimo, para tener "acción". Las ultimas 4 entradas más las entradas extra estarán disponibles hasta el primer lanzamiento de juego.
+										Todos los pronósticos se basan en lanzadores listados. El partido debe de durar 8 ½ entradas como mínimo, si el equipo de casa se está ganando, de otro modo el partido tiene que ser concluido en su totalidad. Todo pronóstico se basa en lanzadores listados. El partido tiene que durar 5 entradas completas, como mínimo, para tener "acción". Las últimas 4 entradas más las entradas extra estarán disponibles hasta el primer lanzamiento de juego.
 									</p>
 									<h3 id="baseball-internacional">Basbell Internacional y sus Reglas</h3>
 									<p>
 										Todos los juegos deben de empezar en la fecha y hora estipulada para que las apuestas tengan acción
 										Si se suspende una jugada antes de que se complete el tiempo de juego estipulado en el evento, los pronósticos no tendrán acción.
-										Si la liga/país permite juegos empatados, las reglas estándares para moneyline y handicap aplicaran al caso.
+										Si la liga/país permite juegos empatados, las reglas estándares para moneyline y handicap aplicarán al caso.
 									</p>
 									</div>
 								</div>
 								<br/>
 								<div id="basketball">
-									<h2>Basketball</h2>
+									<h2>Baloncesto</h2>
 									<h3 id="basketball-tiempo">Tiempo de Juego Oficial</h3>
 									<p>
 										Los pronósticos son oficiales luego de 43 minutos de juego en partidos de NBA o 35 minutos de juego en partidos de baloncesto universitario y WNBA. De no cumplirse el tiempo, los pronósticos se cancelan.
@@ -169,7 +169,7 @@ export default class SportsRules extends React.Component {
 										<br/>
 										Si se suspende una jugada antes de que se complete el tiempo de juego estipulado en el evento, los pronósticos no tendrán acción.
 										<br/>
-										Si la liga/país permite juegos empatados, las reglas estándares para moneyline y handicap aplicaran al caso.
+										Si la liga/país permite juegos empatados, las reglas estándares para moneyline y handicap aplicarán al caso.
 									</p>
 								</div>
 								<br/>
@@ -204,15 +204,15 @@ export default class SportsRules extends React.Component {
 								</div>
 								<br/>
 								<div id="cricket">
-									<h2>Cricket</h2>
+									<h2>Críquet</h2>
 									<p>
 										Mínimo una bola debe de ser boleada para que los pronósticos tengan validez. Si el partido es abandonado debido a condiciones climáticas no aptas para lanzar, todos los pronósticos sin definir en el campo serán nulos.
 										<br/>
-										Para bateos o boleos cara a cara, ambos bateadores deben de llegar al crease, o ambos boleadores deben de bolear una bola al menos para que los pronósticos se mantengan. De lo contrario los pronósticos serán nulos y el dinero será devuelto.
+										Para bateos o boleos cara a cara, ambos bateadores deben de llegar al <strong>crease</strong>, o ambos boleadores deben de bolear una bola al menos para que los pronósticos se mantengan. De lo contrario los pronósticos serán nulos y el dinero será devuelto.
 										<br/>
 										En los juegos de un día que se vean afectados por condiciones atmosféricas, el resultado será determinado por las Reglas de Competición. Si se declara como sin-resultado, los pronósticos serán nulos y el dinero devuelto.
 										<br/>
-										Las apuestas en Cricket Australiano Domestico están basados en la mayor cantidad de puntos ganados durante el juego.
+										Las apuestas en Críquet Australiano Domésticoestán basados en la mayor cantidad de puntos ganados durante el juego.
 									</p>
 								</div>
 								<br/>
@@ -258,7 +258,7 @@ export default class SportsRules extends React.Component {
 									<p>Todas las jugadas son acción sin importar si el jugador comienza o no.</p>
 									<p>Si un torneo se ve interrumpido o afectado por razones externas, el resultado oficial será utilizado cuando se necesite definir ganadores, sin importar el número de rondas jugadas.</p>
 									<p>
-										Si hay uno o más participantes empatados, los siguientes tiebreakers aplicaran
+										Si hay uno o más participantes empatados, los siguientes tiebreakers aplicarán
 										<br/>
 										#1: El jugador con la mejor 4ta ronda ganara.
 										<br/>
@@ -303,7 +303,7 @@ export default class SportsRules extends React.Component {
 										<br/>
 										Si se suspende una jugada antes de que se complete el tiempo de juego estipulado en el evento, los pronósticos no tendrán acción.
 										<br/>
-										Si la liga/país permite juegos empatados, las reglas estándares para moneyline y handicap aplicaran al caso.
+										Si la liga/país permite juegos empatados, las reglas estándares para moneyline y handicap aplicarán al caso.
 									</p>
 								</div>
 								<br/>
