@@ -43,7 +43,7 @@ const ContactForm = () => (
         </form>
       </div>
       <div className="column is-hidden-mobile">
-        <img src={add2} alt=""/>
+        <img src={add2} alt="Jugador de NFL lanzando"/>
       </div>
     </div>
   </div>

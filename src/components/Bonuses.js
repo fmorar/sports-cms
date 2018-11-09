@@ -12,7 +12,7 @@ const Bonuses = () => (
       <div className="images-grid">
       <div className="columns">
         <div className="image image-big column is-6">
-          <Link to="/bonuses-crypto"><img src={bonuses01} alt=""/></Link>
+          <Link to="/bonuses-crypto"><img src={bonuses01} alt="Crypto Bonus"/></Link>
           <p className="bonuses-info">
             <Link to="/bonuses-crypto">
               Crypto
@@ -25,8 +25,8 @@ const Bonuses = () => (
         <div className="column is-6">
           <div className="image-small--container">
             <div className="columns">
-              <div className="image image-small column is-6">
-                <Link to="/bonuses-cash"><img src={bonuses02} alt=""/></Link>
+              <div className="image image-small column is-6"> 
+                <Link to="/bonuses-cash"><img src={bonuses02} alt="Cash Bonus"/></Link>
                 <p className="bonuses-info">
                   <Link to="/bonuses-cash">
                     Cash
@@ -38,7 +38,7 @@ const Bonuses = () => (
               </div>
 
               <div className="image image-small column is-6">
-                <Link to="/bonuses-reload"><img src={bonuses03} alt=""/></Link>
+                <Link to="/bonuses-reload"><img src={bonuses03} alt="Reload Bonus"/></Link>
                 <p className="bonuses-info">
                   <Link to="/bonuses-reload">
                     Reload
@@ -52,7 +52,7 @@ const Bonuses = () => (
             </div>
             <div className="columns">
               <div className="image image-small column is-6">
-               <Link to="/bonuses-referral"><img src={bonuses04} alt=""/></Link>
+               <Link to="/bonuses-referral"><img src={bonuses04} alt="Referral Bonus"/></Link>
                 <p className="bonuses-info">
                   <Link to="/bonuses-referral">
                     Referral
@@ -63,7 +63,7 @@ const Bonuses = () => (
                 <Link className="button is-text button__bonuses" to="/bonuses-referral">Obtener ahora!</Link>
               </div>
               <div className="image image-small column is-6">
-               <Link to="/register"><img src={bonuses05} alt=""/></Link>
+               <Link to="/register"><img src={bonuses05} alt="Registrate"/></Link>
                 <p className="bonuses-info">
                   <Link to="/register">
                     Registrate

@@ -10,7 +10,7 @@ class TagRoute extends React.Component {
     const postLinks = posts.map(post => (
       <li className="tag--item columns" key={post.node.fields.slug}>
         <picture className="column is-1">
-          <img className="image" width="50" src={Tag} alt=""/>
+          <img className="image" width="50" src={Tag} alt="Imagen de etiqueta"/>
         </picture>
         <Link className="column" to={post.node.fields.slug}>
           <p className="is-size-3">{post.node.frontmatter.title}</p>

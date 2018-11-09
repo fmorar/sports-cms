@@ -45,7 +45,7 @@ export default class SingUp extends React.Component {
 							  </div>
 							</div>
 							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only sing-up__img">
-								<img className="is-inherit" src={SingUP} alt=""/>
+								<img className="is-inherit" src={SingUP} alt="Estadio de futbal"/>
 							</div>
 					  </div>
 					</div>

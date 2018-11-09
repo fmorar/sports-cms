@@ -15,7 +15,7 @@ export default class Info extends React.Component {
 				<div className="container">
 					<div className="columns">
 						<div className="column is-hidden-mobile">
-							<img src={Infoimg} alt=""/>
+							<img src={Infoimg} alt="Jugador de NBA saltando"/>
 						</div>
 						<div className="column">
 							<h2 className="title">Información general</h2>

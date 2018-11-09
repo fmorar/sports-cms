@@ -76,7 +76,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="copyright text-center">
-      <p>VIPSPORTBOOK {(new Date().getFullYear())} All Rights Reserved.</p>
+      <p><a className="copyright" href="www.vipsportsbook.com">VIPSPORTBOOK</a> {(new Date().getFullYear())} All Rights Reserved.</p>
     </div>
   </footer>
 )

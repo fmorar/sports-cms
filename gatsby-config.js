@@ -27,6 +27,21 @@ module.exports = {
         plugins: [],
       },
     },
+   {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: 'https://vipsportsbook.com/',
+      sitemap: 'https://vipsportsbook.com//sitemap.xml',
+      env: {
+        development: {
+          policy: [{ userAgent: '*', disallow: ['/'] }]
+        },
+        production: {
+          policy: [{ userAgent: '*', allow: '/' }]
+        }
+      }
+    }
+    },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

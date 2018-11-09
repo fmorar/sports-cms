@@ -24,7 +24,7 @@ export default class Bets extends React.Component {
 									    <div className="content">
 										    <div className="columns">
 													<div className="column is-3 card__bet__img card__bet__img">
-														<img className="image" src={racebook} alt=""/>
+														<img className="image" src={racebook} alt="Racebook"/>
 													</div>
 													<div className="column">
 														<h3>Racebook</h3>
@@ -44,7 +44,7 @@ export default class Bets extends React.Component {
 									    <div className="content">
 										    <div className="columns">
 													<div className="column is-3 card__bet__img">
-														<img className="image" src={casinoOnline} alt=""/>
+														<img className="image" src={casinoOnline} alt="Casino Virtual"/>
 													</div>
 													<div className="column">
 														<h3>Casino Virtual</h3>
@@ -64,7 +64,7 @@ export default class Bets extends React.Component {
 									    <div className="content">
 										    <div className="columns">
 													<div className="column is-3 card__bet__img">
-														<img className="image" src={casinoVivo} alt=""/>
+														<img className="image" src={casinoVivo} alt="Casino en vivo"/>
 													</div>
 													<div className="column">
 														<h3>Casino en vivo</h3>
@@ -84,7 +84,7 @@ export default class Bets extends React.Component {
 									    <div className="content">
 										    <div className="columns">
 													<div className="column is-3 card__bet__img">
-														<img className="image" src={pronosticosVivo} alt=""/>
+														<img className="image" src={pronosticosVivo} alt="Pronósticos en vivo"/>
 													</div>
 													<div className="column">
 														<h3>Pronósticos en vivo</h3>

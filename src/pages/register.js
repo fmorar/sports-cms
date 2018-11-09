@@ -131,7 +131,7 @@ export default class Register extends React.Component {
 							  </div>
 							</div>
 							<div className="column is-paddingless is-hidden-mobile is-hidden-tablet-only login_img">
-								<img className="is-inherit" src={RegisterImg} alt=""/>
+								<img className="is-inherit" src={RegisterImg} alt="Estadio de futbal"/>
 							</div>
 					  </div>
 					</div>
