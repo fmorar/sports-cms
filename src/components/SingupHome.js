@@ -8,7 +8,7 @@ const  SingupHome = () => (
       <div className="field">
         <label className="label label--singup">Nombre</label>
         <div className="control">
-          <input className="input" type="text" placeholder="Ej: Adam sandler"/>
+          <input className="input" type="text" placeholder="Ej: juan perez"/>
         </div>
       </div>
       <div className="field">

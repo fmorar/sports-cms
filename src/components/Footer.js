@@ -14,9 +14,7 @@ const Footer = () => (
                 Sobre Nosotros
               </Link>
             </li>
-            <li className="sitemap--menu__item">
-              <p>Programa de lealtad</p>
-            </li>
+
             <li className="sitemap--menu__item">
               <Link to="/dictionary">Diccionario</Link>
             </li>
@@ -45,9 +43,6 @@ const Footer = () => (
         <div className="sitemap__block">
           <h4>Ayuda</h4>
           <ul className="sitemap--menu">
-            <li className="sitemap--menu__item">
-              <Link to="/">Pagos</Link>
-            </li>
             <li className="sitemap--menu__item">
               <Link to="/#contact">Contáctenos</Link>
             </li>

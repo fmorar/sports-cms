@@ -39,7 +39,7 @@ export default class Register extends React.Component {
 							      <div className="field">
 							        <label className="label">Nombre completo</label>
 							        <div className="control">
-							          <input className="input" type="text" required placeholder="Ej: adam sandler"/>
+							          <input className="input" type="text" required placeholder="Ej: juan perez"/>
 							        </div>
 							      </div>
 							      <div className="field">
