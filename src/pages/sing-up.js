@@ -15,17 +15,17 @@ export default class SingUp extends React.Component {
 									<p className="title">
 										Iniciar sesión
 									</p>
-							    <form className="login" action="" method="post">
+							    <form className="login loginform" action="https://sportsbook.vipsportsbook.com/Qubic/SecurityPage.php" method="post">
 							      <div className="field">
 							        <label className="label">Usuario</label>
 							        <div className="control">
-							          <input className="input" type="text" placeholder="Nombre de usuario"/>
+							          <input name="customerID" className="input" type="text" placeholder="Nombre de usuario"/>
 							        </div>
 							      </div>
 							      <div className="field">
 							        <label className="label">Contraseña</label>
 							        <div className="control">
-							          <input className="input" type="password" placeholder="Password"/>
+							          <input name="password" className="input" type="password" placeholder="Password"/>
 							        </div>
 							      </div>
 

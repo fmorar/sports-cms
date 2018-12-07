@@ -85,9 +85,9 @@ const Navbar = () => (
         <Link className="navbar-item" to="/blog">
          Blog
         </Link>
-        <Link className="button is-outlined is-rounded" to="/register">
+        <a className="button is-outlined is-rounded" href="https://sportsbook.vipsportsbook.com/Qubic/signup/vipsportsbook/susignupform.php">
          Registrese
-        </Link>
+        </a>
       </div>
     </div>
   </nav>

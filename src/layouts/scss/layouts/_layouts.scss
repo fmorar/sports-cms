@@ -90,3 +90,24 @@
 .card-info {
     min-height: 265px;
 }
+
+.license {
+    position: relative;
+
+    &>div {
+	    position: absolute;
+	    bottom: 0;
+	    left: 5%;
+    }
+
+	img {
+		width: 40% !important;
+	}
+
+	span {
+	    position: absolute;
+	    left: 9%;
+	    bottom: 15px;
+	    color: white;
+	}
+}

@@ -40,6 +40,11 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <div className="license">
+            <div id="ceg-73b5b327-ea40-4537-a0ff-d4bcca00887e" data-ceg-seal-id="73b5b327-ea40-4537-a0ff-d4bcca00887e" data-ceg-image-size="128" data-ceg-image-type="basic-small">
+            </div>
+            <span>Curaçao eGaming License</span> 
+          </div>
         </body>
         <script
           dangerouslySetInnerHTML={{
@@ -56,6 +61,37 @@ module.exports = class HTML extends React.Component {
                 `,
           }}
         />
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://73b5b327-ea40-4537-a0ff-d4bcca00887e.curacao-egaming.com/ceg-seal.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  $(document).ready(function(){
+                    function getParameterByName( name ){
+                      var regexS = "[\\?&]"+name+"=([^&#]*)", 
+                      regex = new RegExp( regexS ),
+                      results = regex.exec( window.location.search );
+                      if( results == null ){
+                      return "";
+                      } else{
+                      return decodeURIComponent(results[1].replace(/\+/g, " "));
+                      }
+                    } 
+                     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                      var noMobile=getParameterByName('noMobile');
+                      console.log("[" +  noMobile + "]");
+                      if(noMobile != "true"){
+                        $('.loginform').attr('action','https://sportsbook.vipsportsbook.com/mQubic/SecurityPage.php');
+                      }
+                      
+                      }
+                    } 
+                  );
+                `,
+          }}
+        />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -67,31 +103,6 @@ module.exports = class HTML extends React.Component {
                       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                       a.appendChild(r);
                   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-                `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                    !function(f,b,e,v,n,t,s)
-                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                    n.queue=[];t=b.createElement(e);t.async=!0;
-                    t.src=v;s=b.getElementsByTagName(e)[0];
-                    s.parentNode.insertBefore(t,s)}(window, document,'script',
-                    'https://connect.facebook.net/en_US/fbevents.js');
-                    fbq('init', '231272243942220');
-                    fbq('track', 'PageView');
-                  <noscript>
-                    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=231272243942220&ev=PageView&noscript=1"/>
-                  </noscript>
-                  fbq('track', 'Lead');
-                  fbq('track', 'ViewContent', {
-                    value: 1,
-                    currency: 'crc',
-                    content_type: 'pronosticos deportivos',
-                  });
                 `,
           }}
         />

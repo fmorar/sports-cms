@@ -31,7 +31,7 @@ module.exports = {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
       host: 'https://vipsportsbook.com/',
-      sitemap: 'https://vipsportsbook.com//sitemap.xml',
+      sitemap: 'https://vipsportsbook.com/sitemap.xml',
       env: {
         development: {
           policy: [{ userAgent: '*', disallow: ['/'] }]

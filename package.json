@@ -5,30 +5,30 @@
   "author": "Tesla Digital",
   "dependencies": {
     "axios": "^0.18.0",
-    "bulma": "^0.6.0",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.37",
+    "bulma": "^0.6.2",
+    "gatsby": "^1.9.279",
+    "gatsby-link": "^1.6.46",
     "gatsby-plugin-netlify": "^1.0.19",
-    "gatsby-plugin-netlify-cms": "^1.0.9",
-    "gatsby-plugin-react-helmet": "^2.0.5",
+    "gatsby-plugin-netlify-cms": "^1.0.12",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.33",
-    "gatsby-transformer-sharp": "^1.6.21",
-    "lodash": "^4.17.5",
+    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "lodash": "^4.17.11",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^1.7.0",
-    "nuka-carousel": "^4.3.6",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
+    "nuka-carousel": "^4.4.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.1",
     "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-emotion": "^9.2.12",
     "react-helmet": "^5.2.0",
-    "react-responsive-modal": "^3.3.0",
-    "react-spinners": "^0.4.5",
+    "react-responsive-modal": "^3.5.0",
+    "react-spinners": "^0.4.7",
     "uuid": "^3.2.1"
   },
   "keywords": [
@@ -45,6 +45,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "prettier": "^1.15.1"
   }
 }
